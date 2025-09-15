@@ -1,0 +1,166 @@
+
+.header{
+	box-shadow: -4px 4px 12px 0px rgba(0, 32, 70, 0.2);
+}
+.header-top{
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+
+.header-search{
+	width: 621px;
+	background: #005DC5;
+	border-radius: 8px;
+	padding: 4px 8px 4px 4px;
+}
+.header-search form{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.header-search input{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	padding: 14px 20px;
+	border-radius: 6px;
+
+}
+.header-search button{
+	width: 33px;
+	height: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+}
+
+
+.header-contacts{
+	width: max-content;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	font-weight: 500;
+	font-size: 20px;
+	color: #313131;
+	margin-right: 20px;
+}
+.header-contacts a{
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+.header-contacts a svg{
+	width: 22px;
+	height: 24px;
+}
+
+.header-social{
+	max-width: 120px;
+	margin-right: 20px;
+}
+.header-lang{
+	margin-right: 20px;
+}
+.header-lang span{
+	display: block;
+	font-size: 20px;
+	color: #313131;
+}
+.header-catalog-burger{
+	width: 60px;
+	height: 60px;
+	background-color: #005DC5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.header-bottom{
+	padding: 12px 0;
+
+}
+.header-menu{
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	color: #313131;
+	font-size: 20px;
+	font-weight: 500;
+
+}
+.burger{
+	display: none;
+	cursor: pointer;
+}
+.burger .close-menu{
+	display: none;
+}
+
+
+
+.header-nav ul{
+	display: flex;
+	gap: 25px;
+	white-space: nowrap;
+}
+
+
+@media (max-width: 1100px){
+	.header .container{
+		gap: 20px;
+	}
+
+	.header-content{
+		gap: 20px;
+	}
+
+	.header-nav ul{
+		gap: 15px;
+	}
+}
+
+@media (max-width: 950px){
+	.header .container{
+		position: relative;
+	}
+	.burger{
+		display: block;
+	}
+	.header-content{
+		flex-direction: column;
+		align-items: flex-start;
+		position: absolute;
+		top: 80px;
+		left: -300%;
+		transition: 0.5s;
+	}
+	.header-nav ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.header.mobile-header{
+		width: 100%;
+		height: 100vh;
+		background-color: #fff;
+	}
+	.header.mobile-header .header-content{
+		left: 15px;
+	}
+
+	.header.mobile-header .burger .close-menu{
+		display: block;
+	}
+
+	.header.mobile-header .burger .burger-menu{
+		display: none;
+	}
+}

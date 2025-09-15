@@ -1,0 +1,87 @@
+.banner{
+    padding: 40px 0;
+    position: relative;
+}
+.banner-element-top{
+    position: absolute;
+    top: -37px;
+    left: 0px;
+    z-index: -1;
+}
+.banner-element-bottom{
+    position: absolute;
+    bottom: -450px;
+    right: 0px;
+    z-index: -1;
+}
+.banner-container{
+    position: relative;
+}
+.banner-content{
+    height: 760px;
+    width: 100%;
+    border-radius: 40px;
+    padding: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background: linear-gradient(254.66deg, rgba(219, 243, 252, 0) 30.58%, #02A4E4 99.34%);
+
+}
+
+.banner-text{
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.banner  .swiper-btn-next, 
+.banner  .swiper-btn-prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.banner  .swiper-btn-next{
+    right: -53px;
+}
+
+.banner  .swiper-btn-prev{
+    left: -53px;
+}
+
+
+@media (max-width: 1650px){
+    .banner  .swiper-btn-next{
+        right: 20px;
+    }
+
+    .banner  .swiper-btn-prev{
+        left: 20px;
+    }
+    
+}
+
+@media (max-width: 767px){
+    .banner-content{
+        height: 80vh;
+        padding: 100px 20px;
+    }
+
+    .banner  .swiper-btn-next,
+    .banner  .swiper-btn-prev{
+       display: none;
+    }
+
+  
+    
+}

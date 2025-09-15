@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bionitt</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="layout">
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <a href="/index.html" class="logo">
+                        <img src="./assets/icons/logo.svg" alt="logo">
+                    </a>
+                    <div class="header-search">
+                        <form action="">
+                            <input type="text" placeholder="Поиск">
+                            <button>
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.99988 -0.000102997C10.5897 -0.000102997 13.4999 2.91005 13.4999 6.4999C13.4999 7.9339 13.0335 9.25799 12.2469 10.3329L18.2069 16.2929C18.5974 16.6834 18.5974 17.3164 18.2069 17.7069C17.8164 18.0975 17.1834 18.0975 16.7928 17.7069L10.8329 11.747C9.75797 12.5335 8.43388 12.9999 6.99988 12.9999C3.41003 12.9999 0.499878 10.0897 0.499878 6.4999C0.499878 2.91005 3.41003 -0.000102997 6.99988 -0.000102997ZM6.99988 1.9999C4.5146 1.9999 2.49988 4.01462 2.49988 6.4999C2.49988 8.98518 4.5146 10.9999 6.99988 10.9999C9.48516 10.9999 11.4999 8.98518 11.4999 6.4999C11.4999 4.01462 9.48516 1.9999 6.99988 1.9999Z" fill="#F0F0F0"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                     <div class="header-contacts">
+                        <a href="tel:+73432878585" class="phone">
+                            <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.18952 7.34485C2.78147 4.77007 5.36248 3 6.23161 3C7.10042 3 9.68289 6.56753 9.29445 7.34485C8.86023 8.21382 8.01247 8.23816 7.55652 9.08279C6.74227 10.5911 12.3584 15.303 12.7706 15.1656C14.074 14.7311 14.0739 13.4274 14.9428 12.9931C15.812 12.5587 18.905 15.8485 18.8531 16.9035C18.8318 17.338 16.5805 20.4491 14.9428 19.9449C9.29771 18.207 3.60266 9.95176 3.18952 7.34485Z" fill="#005DC5" stroke="#005DC5" stroke-width="1.4"/>
+                            </svg>
+                           +7 (4922) 34-16-21
+                        </a>
+                        <a href="mailto:sale@bionit.ru" class="mail">
+                            <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2.5" y="5.5" width="17" height="13" rx="1.5" fill="#005DC5" stroke="#005DC5"/>
+                            <path d="M4.69995 7.625L11 11.125L17.3 7.625" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            sale@bionit.ru
+                        </a>
+                    </div>
+                    <div class="header-social">
+                        <span>Напишите нам в мессенджеры:</span>
+                        <div>
+                            <a href="https://t.me/bionitt">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.7677 8.11459C24.0251 8.00624 24.3069 7.96888 24.5836 8.00637C24.8604 8.04387 25.122 8.15486 25.3413 8.3278C25.5607 8.50073 25.7296 8.72929 25.8306 8.98967C25.9316 9.25006 25.961 9.53275 25.9156 9.80834L23.5531 24.1385C23.324 25.5208 21.8073 26.3135 20.5396 25.625C19.4792 25.049 17.9042 24.1615 16.4875 23.2354C15.7792 22.7719 13.6094 21.2875 13.876 20.2313C14.1052 19.3281 17.751 15.9344 19.8344 13.9167C20.6521 13.124 20.2792 12.6667 19.3135 13.3958C16.9156 15.2063 13.0656 17.9594 11.7927 18.7344C10.6698 19.4177 10.0844 19.5344 9.38438 19.4177C8.1073 19.2052 6.92292 18.876 5.95626 18.475C4.65001 17.9333 4.71355 16.1375 5.95521 15.6146L23.7677 8.11459Z" fill="#313131"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-lang">
+                        <span>RU</span>
+                        <span>EN</span>
+                    </div>
+                    <div class="header-catalog-burger">
+                        <svg width="30" height="14" viewBox="0 0 30 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28.334 11.9997C28.8861 11.9998 29.3338 12.4476 29.334 12.9997C29.334 13.5519 28.8862 13.9996 28.334 13.9997H1.66699C1.11471 13.9997 0.666992 13.552 0.666992 12.9997C0.667167 12.4475 1.11482 11.9997 1.66699 11.9997H28.334ZM28.334 0.33366C28.8862 0.333738 29.334 0.781423 29.334 1.33366C29.3338 1.88575 28.8861 2.33358 28.334 2.33366H1.66699C1.11482 2.33366 0.667168 1.8858 0.666992 1.33366C0.666992 0.781375 1.11471 0.33366 1.66699 0.33366H28.334Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <nav class="header-nav">
+                        <ul class="header-menu">
+                            <li><a href="/about.html">О компаниис</a></li>
+                            <li><a href="/products.html">Продукция</a></li>
+                            <li><a href="/vacancy.html">Вакансии</a></li>
+                            <li><a href="/news.html">Новости</a></li>
+                            <li><a href="/articles.html">Статьи</a></li>
+                            <li><a href="/contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="banner">
+                <div class="banner-element-top">
+                    <svg width="249" height="400" viewBox="0 0 249 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_4299_52938)">
+                        <circle cx="49" cy="200" r="200" fill="url(#paint0_linear_4299_52938)"/>
+                        <g filter="url(#filter0_d_4299_52938)">
+                        <circle cx="49" cy="200" r="120" fill="url(#paint1_linear_4299_52938)" shape-rendering="crispEdges"/>
+                        </g>
+                        <g filter="url(#filter1_d_4299_52938)">
+                        <circle cx="109" cy="200" r="60" fill="url(#paint2_radial_4299_52938)" shape-rendering="crispEdges"/>
+                        </g>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_4299_52938" x="-105" y="62" width="280" height="280" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="-14" dy="2"/>
+                        <feGaussianBlur stdDeviation="10"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.00784314 0 0 0 0 0.643137 0 0 0 0 0.894118 0 0 0 0.2 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4299_52938"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4299_52938" result="shape"/>
+                        </filter>
+                        <filter id="filter1_d_4299_52938" x="27" y="133" width="144" height="144" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="-10" dy="5"/>
+                        <feGaussianBlur stdDeviation="6"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.00784314 0 0 0 0 0.643137 0 0 0 0 0.894118 0 0 0 0.4 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4299_52938"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4299_52938" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_4299_52938" x1="49" y1="0" x2="49" y2="400" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.293269" stop-color="#DBF3FC"/>
+                        <stop offset="1" stop-color="#ABE7FF" stop-opacity="0.992157"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_4299_52938" x1="147.286" y1="24" x2="49" y2="320" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.02" stop-color="#DBF3FC"/>
+                        <stop offset="0.384615" stop-color="#ABE7FF" stop-opacity="0.992157"/>
+                        <stop offset="1" stop-color="#82DCFF"/>
+                        </linearGradient>
+                        <radialGradient id="paint2_radial_4299_52938" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(178.908 149.358) rotate(134.198) scale(138.97)">
+                        <stop offset="0.0717912" stop-color="#ABE7FF" stop-opacity="0.992157"/>
+                        <stop offset="0.245192" stop-color="#ABE7FF" stop-opacity="0.992157"/>
+                        <stop offset="0.528746" stop-color="#82DCFF"/>
+                        <stop offset="1" stop-color="#35C4FC"/>
+                        </radialGradient>
+                        <clipPath id="clip0_4299_52938">
+                        <rect width="400" height="400" fill="white" transform="translate(-151)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+
+                </div>
+                <div class="banner-element-bottom">
+                    <svg width="667" height="880" viewBox="0 0 667 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_4299_52930)">
+                        <ellipse cx="439.522" cy="440" rx="439.522" ry="439.729" fill="url(#paint0_linear_4299_52930)"/>
+                        <g filter="url(#filter0_d_4299_52930)">
+                        <ellipse cx="435.434" cy="437" rx="286.201" ry="286.335" fill="url(#paint1_linear_4299_52930)" shape-rendering="crispEdges"/>
+                        </g>
+                        <g filter="url(#filter1_d_4299_52930)">
+                        <ellipse cx="578.534" cy="437" rx="143.1" ry="143.168" fill="url(#paint2_radial_4299_52930)" shape-rendering="crispEdges"/>
+                        </g>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_4299_52930" x="115.233" y="132.665" width="612.401" height="612.671" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="-14" dy="2"/>
+                        <feGaussianBlur stdDeviation="10"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.00784314 0 0 0 0 0.643137 0 0 0 0 0.894118 0 0 0 0.2 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4299_52930"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4299_52930" result="shape"/>
+                        </filter>
+                        <filter id="filter1_d_4299_52930" x="413.434" y="286.832" width="310.2" height="310.335" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="-10" dy="5"/>
+                        <feGaussianBlur stdDeviation="6"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.00784314 0 0 0 0 0.643137 0 0 0 0 0.894118 0 0 0 0.4 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4299_52930"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4299_52930" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_4299_52930" x1="439.522" y1="0.270508" x2="439.522" y2="879.729" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.293269" stop-color="#DBF3FC"/>
+                        <stop offset="1" stop-color="#ABE7FF" stop-opacity="0.992157"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_4299_52930" x1="669.846" y1="17.0413" x2="435.235" y2="723.269" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.02" stop-color="#DBF3FC"/>
+                        <stop offset="0.384615" stop-color="#ABE7FF" stop-opacity="0.992157"/>
+                        <stop offset="1" stop-color="#82DCFF"/>
+                        </linearGradient>
+                        <radialGradient id="paint2_radial_4299_52930" cx="0" cy="0" r="1" gradientTransform="matrix(-231.061 237.737 -237.625 -231.17 745.265 316.161)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.0717912" stop-color="#ABE7FF" stop-opacity="0.992157"/>
+                        <stop offset="0.245192" stop-color="#ABE7FF" stop-opacity="0.992157"/>
+                        <stop offset="0.528746" stop-color="#82DCFF"/>
+                        <stop offset="1" stop-color="#35C4FC"/>
+                        </radialGradient>
+                        <clipPath id="clip0_4299_52930">
+                        <rect width="880" height="880" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                </div>
+                <div class="container banner-container">
+                    <div class="swiper banner-swiper" >
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="banner-content" style="background: no-repeat center url('./assets/imgs/banner.jpg');">
+                                    <div class="overlay"></div>
+                                    <div class="banner-text">
+                                        <h1>Современное производство ветеринарных препаратов</h1>
+                                        <a href="/catalog.html" class="btn">Перейти в каталог</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="banner-content" style="background: no-repeat center url('./assets/imgs/banner.jpg');">
+                                    <div class="overlay"></div>
+                                    <div class="banner-text">
+                                        <h1>Современное производство ветеринарных препаратов</h1>
+                                        <a href="/catalog.html" class="btn">Перейти в каталог</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="banner-content" style="background: no-repeat center url('./assets/imgs/banner.jpg');">
+                                    <div class="overlay"></div>
+                                    <div class="banner-text">
+                                        <h1>Современное производство ветеринарных препаратов</h1>
+                                        <a href="/catalog.html" class="btn">Перейти в каталог</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                       
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                     <button class="swiper-btn-prev">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.4852 12H3.51465M3.51465 12L10.4572 5.0575M3.51465 12L10.4572 18.9425" stroke="#1282FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="swiper-btn-next">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7.9425H17.9706M17.9706 7.9425L11.0281 1M17.9706 7.9425L11.0281 14.885" stroke="#1282FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                </div>
+            </section>
+            <section class="advantages"> 
+                <div class="container advantages-container">
+                    <div class="advantages-heading">
+                        <h2>Наши преимущества</h2>
+                        <p>Наша компания обладает множеством преимуществ, по сравнению с другими производителями ветеринарных препаратов в РФ:</p>
+                    </div>
+                   <div class="advantages-content">
+                        <div class="advantages-img">
+                            <img src="./assets/imgs/advantages.png" alt="">
+                         </div>
+                         <div class="advantages-items">
+                            <div class="advantages-item">
+                                <div class="advantages-icon">
+                                    <img src="./assets/icons/Component 1 (4).png" alt="">
+                                </div>
+                                <h4>Собственная лаборатория</h4>
+                                <p>Наличие лаборатории для проведения исследований и анализов, а также собственного подсобного хозяйства с животными-продуцентами.</p>
+                             </div>
+                            <div class="advantages-item">
+                                <div class="advantages-icon">
+                                    <img src="./assets/icons/Component 1.png" alt="">
+                                </div>
+                                <h4>Соответствие стандартам</h4>
+                                <p>Производство ветеринарных медикаментов, отвечающих международным нормам и требованиям.</p>
+                             </div>
+                            <div class="advantages-item">
+                                <div class="advantages-icon">
+                                    <img src="./assets/icons/Component 1 (1).png" alt="">
+                                </div>
+                                <h4>Высокое качество упаковки</h4>
+                                <p>Упаковка продукции в удобную для использования тару из качественных материалов и коробки с подробными инструкциями.</p>
+                             </div>
+                            <div class="advantages-item">
+                                <div class="advantages-icon">
+                                    <img src="./assets/icons/Component 1 (4).png" alt="">
+                                </div>
+                                <h4>Востребованность “Бионит”</h4>
+                                <p>Известность и востребованность лекарств для животных «Бионит» как в нашей стране, так и на ближнем зарубежье.</p>
+                             </div>
+                            <div class="advantages-item">
+                                <div class="advantages-icon">
+                                    <img src="./assets/icons/Component 1 (3).png" alt="">
+                                </div>
+                                <h4>Квалифицированные сотрудники</h4>
+                                <p>Регулярное повышении квалификации и стажировка сотрудников предприятия в специализированных центрах по обучению.</p>
+                             </div>
+                            <div class="advantages-item">
+                                <div class="advantages-icon">
+                                    <img src="./assets/icons/Component 1 (4).png" alt="">
+                                </div>
+                                <h4>Постоянное развитие и инновации</h4>
+                                <p>Постоянная работа над созданием и внедрением новейших препаратов с применением последних технологий.</p>
+                             </div>
+                            <div class="advantages-item">
+                                <div class="advantages-icon">
+                                    <img src="./assets/icons/Component 1 (5).png" alt="">
+                                </div>
+                                <h4>Удобная доставка</h4>
+                                <p>Оперативная доставка по Москве и по всей России при помощи транспортных компаний.</p>
+                             </div>
+                            <div class="advantages-item">
+                                <div class="advantages-icon">
+                                    <img src="./assets/icons/Component 1 (6).png" alt="">
+                                </div>
+                                <h4>Консультации от специалистов</h4>
+                                <p>Оказание консультационных услуг нашими высококвалифицированными специалистами.</p>
+                             </div>
+                            <div class="advantages-item">
+                                <div class="advantages-icon">
+                                    <img src="./assets/icons/Component 1 (7).png" alt="">
+                                </div>
+                                <h4>Оптимальные цены</h4>
+                                <p>Оптимальные цены на лекарства для животных, гибкая система скидок, а также возможность отсрочки платежа.
+                                </p>
+                             </div>
+                        </div>
+                   </div>
+                </div>
+            </section>
+            <section class="categories">
+                <div class="container">
+                    <div class="categories-heading">
+                        <h2>Категории</h2>
+                        <p>Мы выпускаем препараты для животных: гормональные; гинекологические; противомаститные; антибактериальные; противопаразитарные и инсектоакарицидные; применяемые в дерматологии; общеукрепляющие и тонизирующие растворы; мази.</p>
+                    </div>
+
+                    <div class="categories-list">
+                        <div class="categories-item">
+                            <div class="categories-item-content">
+                                <a href="#" class="categories-item-link">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 7.96159H13.3137M13.3137 7.96159L8.68537 3.33325M13.3137 7.96159L8.68537 12.5899" stroke="#004592" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                               
+                                <div class="categories-item-icon">
+                                    <img src="./assets/icons/category1.png" alt="Препараты для коров">
+                                </div>
+                                Препараты для коров
+                            </div>
+                             <span class="categories-item-ellips"></span>
+                        </div>
+                        <div class="categories-item">
+                            <div class="categories-item-content">
+                                <a href="#" class="categories-item-link">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 7.96159H13.3137M13.3137 7.96159L8.68537 3.33325M13.3137 7.96159L8.68537 12.5899" stroke="#004592" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                               
+                                <div class="categories-item-icon">
+                                    <img src="./assets/icons/category1.png" alt="Препараты для коров">
+                                </div>
+                                Препараты для коров
+                            </div>
+                             <span class="categories-item-ellips"></span>
+                        </div>
+                        <div class="categories-item">
+                            <div class="categories-item-content">
+                                <a href="#" class="categories-item-link">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 7.96159H13.3137M13.3137 7.96159L8.68537 3.33325M13.3137 7.96159L8.68537 12.5899" stroke="#004592" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                               
+                                <div class="categories-item-icon">
+                                    <img src="./assets/icons/category1.png" alt="Препараты для коров">
+                                </div>
+                                Препараты для коров
+                            </div>
+                             <span class="categories-item-ellips"></span>
+                        </div>
+                        <div class="categories-item">
+                            <div class="categories-item-content">
+                                <a href="#" class="categories-item-link">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 7.96159H13.3137M13.3137 7.96159L8.68537 3.33325M13.3137 7.96159L8.68537 12.5899" stroke="#004592" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                               
+                                <div class="categories-item-icon">
+                                    <img src="./assets/icons/category1.png" alt="Препараты для коров">
+                                </div>
+                                Препараты для коров
+                            </div>
+                             <span class="categories-item-ellips"></span>
+                        </div>
+                        <div class="categories-item">
+                            <div class="categories-item-content">
+                                <a href="#" class="categories-item-link">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 7.96159H13.3137M13.3137 7.96159L8.68537 3.33325M13.3137 7.96159L8.68537 12.5899" stroke="#004592" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                               
+                                <div class="categories-item-icon">
+                                    <img src="./assets/icons/category1.png" alt="Препараты для коров">
+                                </div>
+                                Препараты для коров
+                            </div>
+                             <span class="categories-item-ellips"></span>
+                        </div>
+                        <div class="categories-item">
+                            <div class="categories-item-content">
+                                <a href="#" class="categories-item-link">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 7.96159H13.3137M13.3137 7.96159L8.68537 3.33325M13.3137 7.96159L8.68537 12.5899" stroke="#004592" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                               
+                                <div class="categories-item-icon">
+                                    <img src="./assets/icons/category1.png" alt="Препараты для коров">
+                                </div>
+                                Препараты для коров
+                            </div>
+                             <span class="categories-item-ellips"></span>
+                        </div>
+                        <div class="categories-item">
+                            <div class="categories-item-content">
+                                <a href="#" class="categories-item-link">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 7.96159H13.3137M13.3137 7.96159L8.68537 3.33325M13.3137 7.96159L8.68537 12.5899" stroke="#004592" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                               
+                                <div class="categories-item-icon">
+                                    <img src="./assets/icons/category1.png" alt="Препараты для коров">
+                                </div>
+                                Препараты для коров
+                            </div>
+                             <span class="categories-item-ellips"></span>
+                        </div>
+                        <div class="categories-item">
+                            <div class="categories-item-content">
+                                <a href="#" class="categories-item-link">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 7.96159H13.3137M13.3137 7.96159L8.68537 3.33325M13.3137 7.96159L8.68537 12.5899" stroke="#004592" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                               
+                                <div class="categories-item-icon">
+                                    <img src="./assets/icons/category1.png" alt="Препараты для коров">
+                                </div>
+                                Препараты для коров
+                            </div>
+                             <span class="categories-item-ellips"></span>
+                        </div>
+                        <div class="categories-item">
+                            <div class="categories-item-content">
+                                <a href="#" class="categories-item-link">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 7.96159H13.3137M13.3137 7.96159L8.68537 3.33325M13.3137 7.96159L8.68537 12.5899" stroke="#004592" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                               
+                                <div class="categories-item-icon">
+                                    <img src="./assets/icons/category1.png" alt="Препараты для коров">
+                                </div>
+                                Препараты для коров
+                            </div>
+                             <span class="categories-item-ellips"></span>
+                        </div>
+                        <div class="categories-item">
+                            <div class="categories-item-content">
+                                <a href="#" class="categories-item-link">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 7.96159H13.3137M13.3137 7.96159L8.68537 3.33325M13.3137 7.96159L8.68537 12.5899" stroke="#004592" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                               
+                                <div class="categories-item-icon">
+                                    <img src="./assets/icons/category1.png" alt="Препараты для коров">
+                                </div>
+                                Препараты для коров
+                            </div>
+                             <span class="categories-item-ellips"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-bottom">
+                <div class="container">
+                    <a class="privacy-policy" href="#">Политика конфиденциальности</a>
+                    <div class="developer">
+                        <p>
+                            <a href="https://kontur-lite.ru/">Создание сайтов</a>
+                            <a href="http://kontur-promo.ru/">Продвижение сайтов</a>
+                        </p>
+                        <svg width="70" height="47" viewBox="0 0 70 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M64.049 20.7086V22.8191H64.816C65.6252 22.8191 66.2592 22.5183 66.2592 21.716C66.2592 21.185 65.9976 20.7064 64.9778 20.7064C64.6586 20.7064 64.4857 20.695 64.049 20.7086ZM61.9297 28.1638V18.6392C62.4462 18.6392 64.816 18.6392 65.082 18.6392C67.6115 18.6392 68.5115 19.9314 68.5115 21.6887C68.5115 23.4573 67.4519 24.1798 66.9486 24.4396L69.6288 28.1638H67.0595L64.8293 24.8613H64.049V28.1638H61.9297Z" fill="#EB5757"/>
+                            <path d="M59.3821 24.0658C59.3821 26.9786 57.582 28.1638 55.5957 28.1638C53.2126 28.1638 51.5566 26.7621 51.5566 23.9701V18.6392H53.6759V23.5074C53.6759 24.9912 54.1126 26.1216 55.5957 26.1216C56.8793 26.1216 57.2628 25.1553 57.2628 23.6305V18.6392H59.3821V24.0658Z" fill="#EB5757"/>
+                            <path d="M46.2843 46.9034H0.664062V0H46.2843V16.0478H44.1694V2.17434H2.77671V44.7291H44.1694V30.7508H46.2843V46.9034Z" fill="#EB5757"/>
+                            <path d="M37.1756 28.1661L32.7795 22.4476V28.1661H30.791V18.6367H32.4869L36.8852 24.3803L36.8807 18.6367H38.867L38.8715 28.1661H37.1756Z" fill="#EB5757"/>
+                            <path d="M41.4209 18.6353H49.1023V20.6774H46.3201V28.1667H44.2008V20.6774H41.4209V18.6353Z" fill="#EB5757"/>
+                            <path d="M9.9834 18.6353H12.1027V22.7879L15.1354 18.6353H17.6781L14.1954 23.0341L17.9552 28.1667H15.2684L12.1027 23.6312V28.1667H9.9834V18.6353Z" fill="#EB5757"/>
+                            <path d="M23.4817 26.2016C25.191 26.2016 26.0777 24.9594 26.0777 23.4005C26.0777 21.7093 24.9338 20.5993 23.4817 20.5993C21.992 20.5993 20.888 21.7093 20.888 23.4005C20.888 24.9845 22.043 26.2016 23.4817 26.2016ZM23.4817 18.6187C26.2196 18.6187 28.2635 20.4534 28.2635 23.4005C28.2635 26.2016 26.2196 28.1823 23.4817 28.1823C20.7461 28.1823 18.7021 26.3452 18.7021 23.4005C18.7021 20.7178 20.6175 18.6187 23.4817 18.6187Z" fill="#EB5757"/>
+                        </svg>
+                    </div>
+                    <div class="copyright">
+                        <span>© 2024 bh_sibiryachka.ru</span>
+                        <span>Все права защищены</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
