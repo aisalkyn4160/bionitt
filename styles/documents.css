@@ -1,0 +1,34 @@
+.documents{
+    padding: 60px 0;
+}
+
+.documents-heading{
+    margin-bottom: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.documents-heading p{
+    max-width: 792px;
+}
+.documents-swiper{
+    margin-right: -200px;
+}
+
+.documents-swiper .swiper-slide{
+    width: 100%;
+    height: 1/1.45;
+    border: 1px solid #1282FF;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .3s ease;
+}
+.documents-swiper .swiper-slide:hover{
+    box-shadow: 2px 2px 20px 0px #02A4E433;
+
+}
+.documents-swiper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
