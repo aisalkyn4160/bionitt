@@ -54,3 +54,31 @@ $(function () {
         $(`.news-items[data-tab="${this.dataset.tab}"]`).addClass('active');
     });
 })
+
+
+function validatePhone(input) {
+    // Удаляем все символы, кроме цифр, плюса, скобок, дефиса и пробела
+    input.value = input.value.replace(/[^\d+\-()\s]/g, '');
+}
+
+
+
+
+const toTop = document.getElementById('toTop');
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        toTop.style.display = "flex";
+
+
+    } else {
+        toTop.style.display = "none";
+    }
+}
+
+toTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

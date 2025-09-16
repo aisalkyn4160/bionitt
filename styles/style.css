@@ -6,7 +6,7 @@
 @import url('documents.css');
 @import url('news.css');
 @import url('feedback.css');
-@import url('footer-style.css');
+@import url('footer.css');
 
 /* --------------------------------------------font-family-------------------------------------------- */
 
@@ -80,7 +80,6 @@ main{
 }
 
 footer{
-	background-color: black;
 	flex-shrink: 0;
 }
 
@@ -178,7 +177,24 @@ p{
 	background-color: #E10010;
 }
 	
-
+#toTop{
+	position: fixed;
+	bottom: 40px;
+	left: 75px;
+	z-index: 10;
+	width: 52px;
+	height: 52px;
+	background-color: #8996A4;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color .3s ease;
+	cursor: pointer;
+}
+#toTop:hover{
+	background-color: #005DC5;
+}
 @media (max-width: 1195px){
 	h1{
 		font-size: 50px;

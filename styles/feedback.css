@@ -1,5 +1,12 @@
 .feedback{
     padding: 60px 0;
+    position: relative;
+}
+.feedback-element{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
 .feedback-container{
     display: grid;
