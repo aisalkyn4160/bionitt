@@ -1,4 +1,50 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const headerCatalogBurger = document.querySelector('.header-catalog-burger');
+  const headerCatalogDropdown = document.querySelector('.header-catalog-dropdown');
+
+  headerCatalogBurger.addEventListener('click', () => {
+    headerCatalogBurger.classList.toggle('active');
+    headerCatalogDropdown.classList.toggle('show');
+
+  });
+})
+
+document.addEventListener('DOMContentLoaded', function() {
+  const button = document.getElementById('language-btn');
+  const buttonText = button.querySelector('span');
+  const dropdown = document.getElementById('language-dropdown');
+  const option = document.querySelector('.language-option');
+
+  // Показать/скрыть дропдаун при клике на кнопку
+  button.addEventListener('click', function() {
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Обработка выбора языка
+  option.addEventListener('click', function(e) {
+    e.preventDefault();
+    dropdown.style.display = 'none';
+    if (buttonText.textContent === 'RUS') {
+      buttonText.textContent = 'ENG';
+      option.textContent = 'RUS';
+    } else {
+      buttonText.textContent = 'RUS';
+      option.textContent = 'ENG';
+    }
+    
+  });
+
+  // Закрыть дропдаун при клике вне его
+  window.addEventListener('click', function(e) {
+    if (!e.target.matches('#language-button')) {
+      if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      }
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
 
     const swiper = new Swiper('.banner-swiper', {
         slidesPerView: 1,
@@ -80,5 +126,63 @@ toTop.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
+    });
+});
+
+
+// Попап благодарности
+document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.getElementById('success-popup');
+    const closeBtn = document.getElementById('success-popup-close');
+    const okBtn = document.getElementById('success-popup-ok');
+    const form = document.getElementById('feedback-form');
+
+    // Функция для показа попапа
+    const showPopup = () => {
+        popup.classList.add('active');
+        document.body.classList.add('no-scroll');
+    };
+
+    // Функция для скрытия попапа
+    const hidePopup = () => {
+        popup.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    };
+
+    // Обработчик отправки формы
+    form?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Здесь можно добавить отправку данных на сервер
+        const formData = new FormData(form);
+        const phone = formData.get('tel') || form.querySelector('input[type="tel"]').value;
+        
+        console.log('Отправка заявки:', phone);
+        
+        // Очищаем форму
+        form.reset();
+        
+        // Показываем попап
+        showPopup();
+    });
+
+    // Закрытие попапа по кнопке "Хорошо"
+    okBtn?.addEventListener('click', hidePopup);
+
+    // Закрытие попапа по крестику
+    closeBtn?.addEventListener('click', hidePopup);
+
+    // Закрытие попапа по клику на overlay
+    popup?.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            hidePopup();
+        }
+    });
+
+    // Закрытие попапа по ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && popup.classList.contains('active')) {
+            hidePopup();
+        }
     });
 });

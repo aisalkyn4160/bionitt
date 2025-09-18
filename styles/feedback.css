@@ -165,3 +165,63 @@
     background-position: center;
     background-size: 13px 10px;
 }
+
+#success-popup{
+    display: none;
+
+
+}
+#success-popup.active{
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: auto;
+}
+
+.success-popup-content{
+    max-width: 640px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.success-popup-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.success-popup-text{
+    /* max-width: 560px; */
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+.success-popup-text h2{
+    margin-bottom: 0;
+}
+.success-popup-text p{
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+}

@@ -1,4 +1,5 @@
 @import url('header.css');
+@import url('header-catalog-menu.css');
 @import url('banner.css');
 @import url('advantages.css');
 @import url('categories.css');
@@ -60,7 +61,8 @@ body{
 	font-family: "Fira Sans", sans-serif;
 	background-color: #fff;
 	line-height: 120%;
-	color: #8A8A8A;
+	color: #313131;
+	overflow-x: hidden;
 }
 .no-scroll{
 	overflow: hidden;
@@ -89,8 +91,28 @@ footer{
 	padding: 0 15px;
 	border: 1px solid red;
 }
+.language-switcher{
+	position: relative;
+}
+.language-btn{
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	cursor: pointer;
+	font-size: 20px;
+	color: #313131;
 
+}
+.language-dropdown{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	cursor: pointer;
+	font-size: 20px;
 
+}
 h1{
 	font-weight: 500;
 	font-size: 72px;
@@ -104,12 +126,14 @@ h2{
 	line-height: 120%;
 	letter-spacing: -.01em;
 	color: #313131;
+	margin-bottom: 12px;
 }
 h3{
 	font-weight: 500;
 	font-size: 32px;
 	line-height: 120%;
 	margin-bottom: 12px;
+	color: #313131;
 }
 h4{
 	font-size: 20px;
@@ -121,6 +145,7 @@ h4{
 p{
 	font-size: 16px;
 	line-height: 120%;
+	color: #8A8A8A;
 }
 .btn{
 	display: flex;
@@ -136,8 +161,11 @@ p{
 	font-size: 20px;
 	letter-spacing: -.01em;
 	line-height: 120%;
+	transition: background-color .3s ease;
 }
-
+.btn:hover{
+	background-color: #AE000C;
+}
 .swiper-btn-next,
 .swiper-btn-prev{
 	display: flex;
@@ -177,6 +205,7 @@ p{
 	background-color: #E10010;
 }
 	
+
 #toTop{
 	position: fixed;
 	bottom: 40px;
@@ -195,6 +224,7 @@ p{
 #toTop:hover{
 	background-color: #005DC5;
 }
+
 @media (max-width: 1195px){
 	h1{
 		font-size: 50px;
@@ -205,6 +235,9 @@ p{
 @media (max-width: 767px){
 	h1{
 		font-size: 32px;
+	}
+	h2{
+		font-size: 30px;
 	}
 	
 }

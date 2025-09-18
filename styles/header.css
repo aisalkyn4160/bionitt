@@ -73,16 +73,7 @@
 	font-size: 20px;
 	color: #313131;
 }
-.header-catalog-burger{
-	width: 60px;
-	height: 60px;
-	background-color: #005DC5;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 4px;
-	cursor: pointer;
-}
+
 .header-bottom{
 	padding: 12px 0;
 
