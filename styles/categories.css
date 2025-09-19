@@ -158,13 +158,36 @@
     .categories-list{
         grid-template-columns: repeat(3, 1fr);
     }
-    
+    .categories-heading{
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+   
 }
 
-@media (max-width: 767px){
+@media (max-width: 576px){
     .categories-list{
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
-    
+       .categories-heading{
+        margin-bottom: 30px;
+    }
+    .categories-heading p{
+        font-size: 16px;
+    }
+    .categories-item-content{
+        font-size: 14px;
+    }
+    .categories-item-link{
+        width: 30px;
+        height: 30px;
+    }
+    .categories-item-ellips{
+        width: 150px;
+        height: 150px;
+        bottom: -100px;
+        right: -50px;
+    }
 }
+

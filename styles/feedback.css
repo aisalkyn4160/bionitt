@@ -20,7 +20,7 @@
     justify-content: space-between;
 }
 .feedback-content-top{
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .feedback-content-top h2{
     margin-bottom: 23px;
@@ -139,6 +139,7 @@
 
 .feedback-submit{
     display: flex;
+    align-items: flex-start;
     gap: 20px;
 }
 .feedback-privacy{
@@ -224,4 +225,43 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 140%;
+}
+
+@media (max-width: 1195px){
+
+   .feedback-container{
+       grid-template-columns: 1fr;
+   }
+    .feedback-content-bottom{
+        display: none;
+    }
+}
+
+@media (max-width: 576px){
+   .personal-inputs{
+        gap: 12px;
+        margin-bottom: 30px;
+   }
+    .personal-inputs input:first-child, .personal-inputs input:nth-child(2){
+        width: 100%;
+    }
+    .contact-choices label{
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    .feedback-submit{
+        flex-direction: column;
+        align-items: center;
+    }
+    .feedback-submit .btn{
+        width: 100%;
+    }
+    .individual-options{
+        flex-wrap: wrap;
+        row-gap: 12px;
+    }
+    .individual-options label{
+        flex-grow: 1;
+    }
 }

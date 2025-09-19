@@ -32,7 +32,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 40px;
     background: linear-gradient(254.66deg, rgba(219, 243, 252, 0) 30.58%, #02A4E4 99.34%);
 
 }
@@ -81,7 +80,4 @@
     .banner  .swiper-btn-prev{
        display: none;
     }
-
-  
-    
 }

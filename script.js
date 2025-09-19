@@ -74,7 +74,16 @@ document.addEventListener('DOMContentLoaded', () => {
             nextEl: '.about-btn-next',
             prevEl: '.about-btn-prev',
         },
-    
+        
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 16,
+            },
+            576: {
+                slidesPerView: 3,
+            },
+        },
 });
 
 const documentsSwiper = new Swiper('.documents-swiper', {
@@ -85,7 +94,23 @@ const documentsSwiper = new Swiper('.documents-swiper', {
             nextEl: '.documents .swiper-btn-next',
             prevEl: '.documents .swiper-btn-prev',
         },
-    
+
+        pagination: {
+            el: '.documents .swiper-pagination',
+        },
+        
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 16,
+            },
+            576: {
+                slidesPerView: 3.5,
+            },
+            768: {
+                slidesPerView: 4.5,
+            },
+        },
 });
 
 });
