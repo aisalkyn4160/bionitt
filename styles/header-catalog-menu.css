@@ -37,7 +37,7 @@
     position: absolute;
     padding: 60px 0;
     background: #fff;
-    top: 135px;
+    top: 125px;
     width: 100vw;
     right: -150%;
     z-index: 10;
@@ -58,6 +58,8 @@
 }
 .header-catalog-categories{
     max-width: 491px;
+    min-width: 460x;
+    flex-shrink: 0;
 }
 .header-catalog-categories .categories-list{
     grid-template-columns: 1fr 1fr;
@@ -110,6 +112,7 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 120%;
+    min-width: 233px
 }
 
 .header-catalog-bottom{
@@ -147,4 +150,34 @@
 .header-catalog-bottom .socials-list .dzen{
     background: transparent;
     border: 1px solid #C7D2DE;
+}
+
+
+
+@media (max-width: 1130px){
+	.header-catalog-burger{
+		width: 44px ;
+		height: 44px;
+	}
+	.header-catalog-burger span{
+		width: 14px ;
+		/* height: 3px; */
+
+	}
+	.header-catalog-burger span:first-child{
+		top: 18px;
+	}
+	.header-catalog-burger span:nth-child(2){
+		bottom: 19px;
+	}
+
+
+    .header-catalog-burger.active span:first-child{
+        transform: translateX(-50%)  rotate(45deg);
+        top: 23px;
+    }
+    .header-catalog-burger.active span:nth-child(2){
+        transform: translateX(-50%)  rotate(-45deg);
+        bottom: 19px;
+    }
 }
