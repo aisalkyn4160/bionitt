@@ -4,7 +4,7 @@
 @media (max-width: 1130px) {
     .mobile-menu{
         display: block;
-        position: fixed;
+        position: absolute;
         width: 100%;
         max-width: 500px;
         height: 100vh;
