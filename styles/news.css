@@ -9,10 +9,11 @@
     margin-bottom: 60px;
 }
 .news-heading .btn{
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 .news-tabs{
     display: flex;
+    align-items: center;
 }
 .news-tab{
     cursor: pointer;
@@ -23,6 +24,7 @@
     padding-right: 40px;
     border-right: 1px solid #BDBDBD;
     transition: all .3s ease;
+
 }
 .news-tab:last-child{
     /* margin-right: 0;
@@ -75,6 +77,7 @@
 }
 .news-item-top{
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
     margin-bottom: 16px;
 }
@@ -94,7 +97,9 @@
     border-radius: 12px;
     width: max-content;
 }
-
+.news-item h4{
+    color: #002046;
+}
 
 @media (max-width: 1195px){
     .news-items{
@@ -110,26 +115,13 @@
     }
 }
 
-@media (max-width: 950px){
-   .news{
-    position: relative;
-    padding-bottom: 90px;
-   }
-    .news .btn{
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
 @media (max-width: 767px){
     .news-items{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
     .news-item:first-child{
-        grid-column: unset;
+        grid-column: 1/3;
         grid-row: unset;
         padding: 40px;
     }
@@ -147,7 +139,7 @@
         margin-bottom: 30px;
     }
     .news-tab h2{
-        font-size: 20px;
+        /* font-size: 20px; */
     }
     .news-tab{
         margin-right: 20px;
@@ -160,10 +152,30 @@
     .news-item:first-child{
         padding: 20px;
     }
+    .news-item-top{
+        gap: 8px;
+    }
     .news-date{
-        font-size: 16px;
+        font-size: 12px;
+        border-radius: 4px;
     }
     .news-type{
-        font-size: 16px;
+        font-size: 12px;
+        border-radius: 4px;
+    }
+
+    .news-item{
+        border-radius: 12px;
+        min-height: 240px;
+    }
+    .news-item:first-child{
+        min-height: 460px;
+    }
+    .news-item:first-child p{
+        font-size: 14px;
+    }
+
+    .news-item h4{
+        font-size: 12px;
     }
 }

@@ -61,23 +61,26 @@
 
 @media (max-width: 1650px){
     .banner  .swiper-btn-next{
-        right: 20px;
+        right: 8px;
     }
 
     .banner  .swiper-btn-prev{
-        left: 20px;
+        left: 8px;
     }
     
 }
 
 @media (max-width: 767px){
-    .banner-content{
-        height: 80vh;
-        padding: 100px 20px;
+    .banner{
+        padding: 20px 0;
     }
-
-    .banner  .swiper-btn-next,
-    .banner  .swiper-btn-prev{
-       display: none;
+    .banner-content{
+        height: 560px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .banner-element-top,
+    .banner-element-bottom{
+        display: none;
     }
 }

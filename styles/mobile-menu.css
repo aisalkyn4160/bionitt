@@ -1,20 +1,42 @@
+ .mobile-menu{
+    display: none;
+ }
 @media (max-width: 1130px) {
     .mobile-menu{
+        display: block;
         position: fixed;
         width: 100%;
+        max-width: 500px;
         height: 100vh;
         top: 0;
-        left: 0;
+        right: -100%;
         z-index: 100;
         background: #fff;
-      
         padding: 20px;
-        /* overflow: auto;
-        opacity: 0;
-        pointer-events: none; */
+        overflow-y: auto;
+        overflow-x: hidden;
+        /* opacity: 0; */
+        pointer-events: none;
         transition: all 0.3s ease-in-out;
     }
     .mobile-menu.active{
+        /* opacity: 1; */
+        pointer-events: all;
+        right: 0;
+    }
+    .mobile-menu-overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .mobile-menu-overlay.active{
         opacity: 1;
         pointer-events: all;
     }
@@ -76,6 +98,7 @@
     padding: 12px;
     border-radius: 4px;
     margin-bottom: 12px;
+    cursor: pointer;
    }
    .mobile-nav{
     margin-top: 40px;
@@ -125,11 +148,139 @@
     margin-bottom: 40px;
    }
 
+
+    .mobile-menu-bottom .socials-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+
+    }
    .mobile-menu-bottom .socials-list a{
-    flex-grow: 1;
-    background: #EFF6FF;
+        flex-grow: 1;
+        background: #EFF6FF;
+        border: none;
    }
     
-
+    .mobile-menu-bottom .mobile-back{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #E10010;
+        cursor: pointer;
+        line-height: 100%;
+        margin-bottom: 12px;
    }
+   .mobile-calalog-categories,
+   .mobile-catalog-menu{
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 100px);  
+    top: 100px;
+    right: -100%;
+    z-index: 100;
+    background: #fff;
+    padding: 20px;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    padding: 20px;
+   }
+   .mobile-calalog-categories.active,
+   .mobile-catalog-menu.active{
+    opacity: 1;
+    right: 0;
+    pointer-events: all;
+   }
+   .mobile-calalog-categories-title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 12px;
+    cursor: pointer;
+   }
+   .mobile-calalog-link{
+    color: #FFF !important;
+    font-weight: 500;
+    display: block;
+    padding: 12px;
+    background-color: #005DC5;
+    border-radius: 4px;
+    margin-bottom: 40px;
+   }
+
+   .mobile-menu .categories-list{
+    grid-template-columns: 1fr 1fr;
+}
+.mobile-menu .categories-item{
+    border-radius: 12px;
+}
+.mobile-menu  .categories-item-link{
+    display: none;
+}
+
+.mobile-menu .categories-item-content{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 120%;
+}
+.mobile-menu .categories-item-icon{
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    min-width: unset;
+}
+
+.mobile-menu .categories-item-ellips{
+    width: 120px;
+    height: 120px;
+    right: -37px;
+    bottom: -73px;
+}
+
+.mobile-menu .catalog-menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+}
    
+@media (max-width: 767px){
+     .mobile-menu-bottom .socials-list{
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 12px;
+        font-weight: 500;
+
+    }
+    
+}
+
+@media (max-width: 575px){
+    .mobile-menu .categories-item{
+        border-radius: 8px;
+    }
+   .mobile-menu .categories-item-content{
+        padding: 10px 12px;
+        font-size: 12px;
+   }
+    .mobile-menu .categories-item-icon{
+        width: 40px;
+        height: 40px;
+    }
+    .mobile-menu .categories-item-ellips{
+        width: 60px;
+        height: 60px;
+        right: -15px;
+        bottom: -40px;
+    }
+}

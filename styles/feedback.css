@@ -147,7 +147,12 @@
     align-items: flex-start;
     gap: 8px;
 }
-
+.feedback-privacy span{
+    color: #8A8A8A;
+}
+.feedback-privacy a{
+    text-decoration: underline;
+}
 .feedback-privacy input{
     flex-shrink: 0;
     width: 24px;
@@ -232,12 +237,13 @@
    .feedback-container{
        grid-template-columns: 1fr;
    }
-    .feedback-content-bottom{
-        display: none;
-    }
+
 }
 
 @media (max-width: 576px){
+    .feedback{
+        padding: 40px 0;
+    }
    .personal-inputs{
         gap: 12px;
         margin-bottom: 30px;
@@ -247,21 +253,56 @@
     }
     .contact-choices label{
         margin-right: 20px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .feedback-submit{
         flex-direction: column;
-        align-items: center;
     }
-    .feedback-submit .btn{
-        width: 100%;
-    }
+   
     .individual-options{
         flex-wrap: wrap;
         row-gap: 12px;
     }
     .individual-options label{
         flex-grow: 1;
+        font-size: 12px;
     }
+    .feedback-contacts span,
+    .feedback-social span{
+        font-size: 12px;
+    }
+
+      .feedback-social svg{
+        width: 36px;
+        height: 36px;
+      }
+    .feedback-contacts a{
+        font-size: 16px;
+        gap: 4px;
+        margin-top: 8px;
+    }
+      .feedback-contacts svg{
+        width: 16px;
+        height: 16px;
+      }
+      .feedback-content-top p{
+        font-size: 16px;
+      }
+      .feedback-element{
+        width: 280px;
+        height: 280px;
+        bottom: unset;
+        top: -68px;
+        left: -120px;
+      }
+      .feedback-element img{
+        width: 100%;
+        height: 100%;
+      }
+      .feedback-privacy span{
+        font-size: 12px;
+        line-height: 120%;
+      }
+    
 }

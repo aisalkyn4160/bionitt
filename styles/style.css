@@ -210,7 +210,9 @@ p{
 	background-color: #E10010;
 }
 	
-
+.swiper-button-lock{
+	display: none;
+}
 #toTop{
 	position: fixed;
 	bottom: 40px;
@@ -229,7 +231,9 @@ p{
 #toTop:hover{
 	background-color: #005DC5;
 }
-
+.phone{
+	white-space: nowrap;
+}
 @media (max-width: 1195px){
 	h1{
 		font-size: 50px;
@@ -241,14 +245,28 @@ p{
 
 @media (max-width: 767px){
 	h1{
-		font-size: 32px;
+		font-size: 36px;
+		margin-bottom: 20px;
 	}
 	h2{
-		font-size: 30px;
+		font-size: 28px;
 	}
 	h3{
 		font-size: 20px;
 	}
+	.btn{
+		padding: 12px 28px;
+		font-size: 14px;
+	}
+	.swiper-btn-next,
+	.swiper-btn-prev{
+		width: 48px;
+		height: 48px;
+	}
+	.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+		bottom: 20px;
+	}
+
 }
 
 @media (max-width: 576px){
@@ -257,5 +275,10 @@ p{
 		height: 10px;
 		margin: 0 4px !important;
 	}
-	
+	h4{
+		font-size: 14px;
+	}
+	p{
+		font-size: 12px;
+	}
 }

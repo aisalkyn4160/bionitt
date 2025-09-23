@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         breakpoints: {
             0: {
-                slidesPerView: 2,
+                slidesPerView: 1.5,
                 spaceBetween: 16,
             },
             576: {
@@ -86,32 +86,77 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 });
 
-const documentsSwiper = new Swiper('.documents-swiper', {
-        slidesPerView: 4.5,
+    const documentsSwiper = new Swiper('.documents-swiper', {
+            slidesPerView: 4.5,
+            spaceBetween: 24,
+            loop: true,
+            navigation: {
+                nextEl: '.documents .swiper-btn-next',
+                prevEl: '.documents .swiper-btn-prev',
+            },
+
+            pagination: {
+                el: '.documents .swiper-pagination',
+            },
+            
+            breakpoints: {
+                0: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 8,
+                },
+                576: {
+                    slidesPerView: 3.5,
+                },
+                768: {
+                    slidesPerView: 4.5,
+                },
+            },
+    });
+
+    const advantagesSwiper = new Swiper('.advantages-swiper', {
+        slidesPerView: 3,
+        grid: {
+            rows: 3,
+            fill: 'row',
+        },
+
         spaceBetween: 24,
         loop: true,
-         navigation: {
-            nextEl: '.documents .swiper-btn-next',
-            prevEl: '.documents .swiper-btn-prev',
+        navigation: {
+            nextEl: '.advantages .swiper-btn-next',
+            prevEl: '.advantages .swiper-btn-prev',
         },
 
         pagination: {
-            el: '.documents .swiper-pagination',
+            el: '.advantages .swiper-pagination',
         },
         
         breakpoints: {
+
             0: {
-                slidesPerView: 2,
+                slidesPerView: 1.2,
                 spaceBetween: 16,
+                grid: {
+                    rows: 2,
+                    fill: 'row',
+                },
             },
             576: {
-                slidesPerView: 3.5,
+                slidesPerView: 1.5,
+                spaceBetween: 16,
+                grid: {
+                    rows: 2,
+                    fill: 'row',
+                },
             },
-            768: {
-                slidesPerView: 4.5,
+            950: {
+                slidesPerView: 2,
             },
-        },
-});
+            1300: {
+                slidesPerView: 3,
+            },
+        },  
+    });
 
 });
 
@@ -211,3 +256,53 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const mobMenuCatTtl = document.querySelector('.js-menu-category');
+    const mobCatCtg = document.querySelector('.mobile-calalog-categories');
+    const mobBack = document.querySelectorAll('.mobile-back');
+
+    mobMenuCatTtl.addEventListener('click', () => {
+        mobCatCtg.classList.toggle('active');
+    });
+    
+    mobBack.forEach(item => {
+        item.addEventListener('click', () => {
+            item.parentElement.classList.remove('active');
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const mobMenuCat = document.querySelector('.js-menu-catalog');
+    const mobCatMenu = document.querySelector('.mobile-catalog-menu');
+    const mobBack = document.querySelector('.mobile-back');
+
+    mobMenuCat.addEventListener('click', () => {
+        mobCatMenu.classList.toggle('active');
+    });
+    
+    mobBack.addEventListener('click', () => {
+        mobCatMenu.classList.remove('active');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const headerBurger = document.querySelector('.header-burger');
+    const mobMenu = document.querySelector('.mobile-menu');
+    const closeMenu = document.querySelector('.close-menu');
+    const mobMneuOverlay = document.querySelector('.mobile-menu-overlay');
+
+    headerBurger.addEventListener('click', () => {
+        mobMenu.classList.toggle('active');
+        document.body.classList.add('no-scroll');
+        mobMneuOverlay.classList.add('active');
+    });
+    
+    closeMenu.addEventListener('click', () => {
+        mobMenu.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+        mobMneuOverlay.classList.remove('active');
+    });
+});
+

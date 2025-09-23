@@ -12,7 +12,7 @@
 }
 .header-logo{
 	width: 20%;
-	min-width: 200px;
+	min-width: 176px;
 }
 .header-logo img{
 	width: 100%;
@@ -96,6 +96,17 @@
 
 }
 
+.header-burger{
+	flex-shrink: 0;
+	width: 44px;
+	height: 44px;
+	background-color: #005DC5;
+	border-radius: 4px;
+	cursor: pointer;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
 
 
 @media (max-width: 1130px){
@@ -110,13 +121,19 @@
 		padding: 12px 0;
 		min-height: 68px;
 	}
-
+	.header-burger{
+		display: flex;
+	}
+	.header-search input{
+		padding: 10px 20px;
+	}
 }
 
 
 @media (max-width: 576px){
 	.header-top{
 		gap: 8px;
+		padding: 8px 0;
 	}
 	.header-search{
 		width: 44px;

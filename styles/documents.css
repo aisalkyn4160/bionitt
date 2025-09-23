@@ -48,6 +48,9 @@
     .documents-swiper{
         margin-right: 0px;
     }
+    .documents-swiper .swiper-slide{
+        border-radius: 12px;
+    }
     .documents .swiper-btns{
        display: none;
     }
