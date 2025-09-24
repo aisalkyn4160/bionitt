@@ -11,6 +11,7 @@
 @import url('mobile-menu.css');
 @import url('catalog.css');
 @import url('pagination.css');
+@import url('product.css');
 /* --------------------------------------------font-family-------------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -169,6 +170,26 @@ p{
 }
 .btn:hover{
 	background-color: #AE000C;
+}
+.white-btn{
+	display: flex;
+	justify-content: center;	
+	align-items: center;
+	width: max-content;
+	white-space: nowrap;
+	padding: 16px 40px;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 100px;
+	color: #E10010 !important;
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: -.01em;
+	line-height: 120%;
+	transition: background-color .3s ease;
+}
+.white-btn:hover{
+	border: 1px solid #E10010;
 }
 .swiper-btn-next,
 .swiper-btn-prev{

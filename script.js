@@ -306,3 +306,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+$(function () {
+    $('.product-tabs__item:first-child').addClass('active')
+    $('.product-characteristic').addClass('active')
+    $('.product-tabs__item').click(function () {
+        $('.product-tabs__item').removeClass('active');
+        $('.product-tabs__content').removeClass('active');
+        $(this).addClass('active');
+        $(`.product-tabs__content[data-tab="${this.dataset.tab}"]`).addClass('active');
+    });
+})
