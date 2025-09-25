@@ -1,0 +1,61 @@
+.about-direction{
+    padding: 60px 0;
+}
+.about-direction-heading{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 60px;
+}
+.about-direction-heading p:first-child{
+   margin-bottom: 20px;
+}
+.direction-item{
+    padding: 40px 0;
+    position: relative;
+}
+.direction-item-content{
+    width: 748px;
+    padding: 60px 60px 32px;
+    background: no-repeat center/cover url('../assets/imgs/direction-item.png');
+    min-height: 640px;
+    border-radius: 20px;
+    font-size: 44px;
+    font-weight: 500;
+    color: #002046;
+    line-height: 120%;
+    display: flex;
+    flex-direction: column;
+}
+.direction-item-content p{
+    margin-top: auto;
+    font-size: 24px;
+    line-height: 140%;
+    color: #8996A4;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.direction-item-content .swiper-btns {
+    justify-content: flex-start;
+}
+
+.direction-item-img{
+    width: 1005px;
+    height: 720px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid green;
+}
+.direction-item-img .overlay{
+    background: rgba(4, 182, 252, 0.1);
+
+}
+.direction-item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,32 @@
+.about-banner{
+    height: 800px;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+    padding: 40px 0 60px;
+}
+.about-banner .overlay{
+    background: linear-gradient(3.37deg, rgba(18, 130, 255, 0.6) -98.46%, rgba(18, 130, 255, 0) 59.59%);
+
+}
+.about-banner .container{
+    height: 100%;
+}
+.about-banner .breadcrumbs a{
+    color: #fff;
+    border-color: #fff;
+}
+.about-banner-content{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.about-banner-content h3{
+    max-width: 1480px;
+    margin-top: auto;
+    color: #fff;
+}

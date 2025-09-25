@@ -1,0 +1,57 @@
+.where-to-buy{
+    padding: 60px 0;
+}
+.where-to-buy-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+.where-to-buy-item{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #EFF6FF;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 76px;
+    transition: all .3s ease;
+}
+.where-to-buy-item:hover{
+    background: linear-gradient(195.35deg, #DBF3FC 15.83%, rgba(171, 231, 255, 0.992157) 74.41%, #82DCFF 89.23%);
+}
+
+.where-to-buy-item a{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+.where-to-buy-item a span{
+    border-bottom: 1px solid #8996A4;
+    padding-bottom: 4px;
+     transition: all .3s ease;
+}
+.where-to-buy-item a:hover span{
+    color: #005DC5;
+    border-color: #005DC5;
+}
+.where-to-buy-item a:hover svg path{
+    stroke: #005DC5;
+}
+
+.back-link{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 120%;
+    color: #8996A4 !important;
+}

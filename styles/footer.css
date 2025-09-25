@@ -1,6 +1,8 @@
 .footer {
   background: #eff6ff;
   padding-top: 100px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
 }
 .footer-top {
   display: flex;

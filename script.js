@@ -160,6 +160,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const directionSwiper = new Swiper('.direction-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: '.direction-swiper .swiper-btn-next',
+            prevEl: '.direction-swiper .swiper-btn-prev',
+        },
+    });
+});
+
 $(function () {
     $('.news-tab:first-child').addClass('active')
     $('.news-items:first-child').addClass('active')
@@ -308,11 +320,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 $(function () {
     $('.product-tabs__item:first-child').addClass('active')
-    $('.product-characteristic').addClass('active')
+    $('.product-description').addClass('active')
     $('.product-tabs__item').click(function () {
         $('.product-tabs__item').removeClass('active');
         $('.product-tabs__content').removeClass('active');
         $(this).addClass('active');
         $(`.product-tabs__content[data-tab="${this.dataset.tab}"]`).addClass('active');
+    });
+})
+
+$(function () {
+    $('.instruction-acc__title').click(function () {
+        $(this).toggleClass('active')
+        $(this).siblings('.instruction-acc__content').slideToggle();
+    })
+})
+
+
+$(function () {
+    $('.partners-address-tab:first-child').addClass('active')
+    $('.partners-addresses-content-rf').addClass('active')
+    $('.partners-address-tab').click(function () {
+        $('.partners-address-tab').removeClass('active');
+        $('.partners-addresses-content').removeClass('active');
+        $(this).addClass('active');
+        $(`.partners-addresses-content[data-tab="${this.dataset.tab}"]`).addClass('active');
     });
 })

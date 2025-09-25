@@ -1,0 +1,40 @@
+.about-numbers{
+    padding: 60px 0;
+}
+.about-numbers-heading{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 60px;
+}
+.about-numbers-heading h2{
+    width: calc(50% - 24px);
+}
+.about-numbers-heading div{
+    width: calc(50% - 24px);
+}
+.about-numbers-heading ul{
+    margin-top: 20px;
+}
+.about-numbers-heading ul li{
+    list-style: disc;
+    margin-left: 20px;
+    color: #8A8A8A;
+    line-height: 120%;
+}
+.about-numbers-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.about-numbers-item{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: -4px 4px 12px 0px #00204633;
+    padding: 20px;
+
+}
+.about-numbers-item h2{
+    color: #005DC5;
+}
