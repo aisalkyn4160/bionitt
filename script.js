@@ -335,7 +335,12 @@ $(function () {
         $(this).siblings('.instruction-acc__content').slideToggle();
     })
 })
-
+$(function () {
+    $('.vacancy-acc-ttl').click(function () {
+        $(this).toggleClass('active')
+        $(this).siblings('.vacancy-acc-content').slideToggle();
+    })
+})
 
 $(function () {
     $('.partners-address-tab:first-child').addClass('active')
@@ -347,3 +352,30 @@ $(function () {
         $(`.partners-addresses-content[data-tab="${this.dataset.tab}"]`).addClass('active');
     });
 })
+
+
+// -----------------------yandex-map--------------------------
+ymaps.ready(init);
+
+function init() {
+    const myMap = new ymaps.Map('map', {
+        center: [56.148243, 40.355898],
+        zoom: 15
+    });
+
+    const pngPlacemark = new ymaps.Placemark([56.148243, 40.355898], {
+        balloonContent: 'г. Владимир, ул. Лакина, Д. 4Б. а/я 11',
+        hintContent: 'г. Владимир, ул. Лакина, Д. 4Б. а/я 11'
+    }, {
+        iconLayout: 'default#imageWithContent',
+        iconImageHref: './assets/icons/map-mark.png',
+        iconImageSize: [80, 80],
+        iconImageOffset: [-40, -80],
+        iconContentOffset: [0, 10], // Смещение текста относительно иконки
+        iconContentLayout: ymaps.templateLayoutFactory.createClass(
+            '<div class="map-icon-content"> ул. Лакина, Д. 4Б</div>'
+        )
+    });
+
+    myMap.geoObjects.add(pngPlacemark);
+}

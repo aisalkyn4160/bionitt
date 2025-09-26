@@ -1,0 +1,130 @@
+.contacts{
+    padding: 60px 0;
+}
+.contacts h4{
+    color: #8996A4;
+}
+.contacts-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.contacts-content-left{
+    width: calc(50% - 12px);
+    min-height: 194px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+.contacts-mails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+.contacts-mails a{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+    color: #313131;
+}
+.contacts-content .socials-list a:not(.dzen){
+    background-color: #EFF6FF;
+}
+
+.contacts-content-right{
+    max-width: 491px;
+}
+.contacts-address h3 span{
+    display: block;
+}
+.contacts-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 60px;
+}
+.contacts-card{
+    min-height: 332px;
+    height: 100%;
+    border-radius: 20px;
+    background: #EFF6FF;
+    padding: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.contacts-card::after{
+    content: '';
+    position: absolute;
+    width: 276px;
+    height: 276px;
+    top: -30px;
+    right: -48px;
+    background:no-repeat center/contain url(../assets/imgs//element.png);
+    /* z-index: -1; */
+    pointer-events: none;
+}
+.contacts-card-contacts{
+    display: flex;
+    gap: 60px;
+    position: relative;
+    z-index: 1;
+}
+.contacts-card h3{
+    color: #002046;
+}
+.contacts-card .phone,
+.contacts-card .mail{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #002046;
+    margin-top: 8px;
+}
+.contatcs-info{
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.contacts-requisites{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.contacts-requisites p{
+    color: #6F6F6F;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+.contacts-requisites p:last-child{
+    margin-bottom: 0;
+}
+#map{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.map-icon-content{
+    background-color: #FFF;
+    width: max-content;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
