@@ -85,6 +85,30 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         },
 });
+const aboutSwiper2 = new Swiper('.about-details .about-swiper', {
+        slidesPerView: 3.5,
+        spaceBetween: 24,
+        pagination: {
+            el: '.about-swiper-pagination',
+           type: 'fraction',
+           
+        },
+
+        navigation: {
+            nextEl: '.about-btn-next',
+            prevEl: '.about-btn-prev',
+        },
+        
+        breakpoints: {
+            0: {
+                slidesPerView: 1.5,
+                spaceBetween: 16,
+            },
+            576: {
+                slidesPerView: 3.5,
+            },
+        },
+});
 
     const documentsSwiper = new Swiper('.documents-swiper', {
             slidesPerView: 4.5,
@@ -163,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const directionSwiper = new Swiper('.direction-swiper', {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 50,
         loop: true,
         navigation: {
             nextEl: '.direction-swiper .swiper-btn-next',

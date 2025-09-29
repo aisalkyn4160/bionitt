@@ -37,4 +37,41 @@
 }
 .about-numbers-item h2{
     color: #005DC5;
+    font-size: 60px;
+}
+
+@media (max-width: 995px) {
+    .about-numbers-heading{
+        flex-direction: column;
+        gap: 0;
+    }
+    .about-numbers-heading h2{
+        width: 100%;
+    }
+    .about-numbers-heading div{
+        width: 100%;
+    }
+    .about-numbers-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .about-numbers{
+        padding: 40px 0;
+    }
+    .about-numbers-items{
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .about-numbers-heading ul{
+        font-size: 12px;
+        margin-top: 14px;
+    }
+    .about-numbers-heading {
+        margin-bottom: 32px;
+    }
+    .about-numbers-item h2{
+        font-size: 44px;
+    }
 }

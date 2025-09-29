@@ -26,7 +26,7 @@
     /* display: grid; */
     grid-template-columns: 1fr 1fr;
     gap: 24px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 .partners-addresses-content.active{
     display: grid;
@@ -43,6 +43,7 @@
 }
 .partner-contacts{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
 }
@@ -57,6 +58,7 @@
 .partner-contacts p{
     font-size: 20px;
     color: #313131;
+    min-width: 240px;
 }
 .address-link{
     display: flex;
@@ -79,6 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
 }   
 .partners-promo h2{
     margin-bottom: 40px;
@@ -86,4 +89,64 @@
 .partners-promo-img{
     width: 260px;
     height: 260px;
+    flex-shrink: 0;
+}
+
+.partners-promo-img img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 767px){
+   .partners-addresses-content{
+    grid-template-columns: 1fr;
+    gap: 16px;
+   }
+   .partners-promo{
+    padding: 20px;
+   }
+   .partners-promo-img{
+        width: 157px;
+        height: 157px;
+   }
+}
+
+@media (max-width: 575px){
+   .back-link{
+    font-size: 16px;
+   }
+    .partners-addresses-tabs{
+        margin: 32px 0px;
+        gap: 12px;
+    }
+    .partners-address-tab{
+        font-size: 12px;
+        padding: 13px 23px 12px;
+    }
+    .address-link span{
+        font-size: 20px;
+    }
+    .partner-contacts{
+        gap: 13px;
+    }
+    .partner-contacts a{
+        font-size: 16px;
+    }
+    .partner-contacts p{
+        font-size: 16px;
+    }
+    .partners-address-item{
+        gap: 75px;
+    }
+    .partners-addresses-content{
+        padding-bottom: 20px;
+    }
+    .partners-promo{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin: 20px 0 40px;
+    }
+    .partners-promo h2{
+        margin-bottom: 20px;
+    }
 }

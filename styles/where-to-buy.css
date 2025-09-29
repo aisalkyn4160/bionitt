@@ -22,7 +22,10 @@
 .where-to-buy-item:hover{
     background: linear-gradient(195.35deg, #DBF3FC 15.83%, rgba(171, 231, 255, 0.992157) 74.41%, #82DCFF 89.23%);
 }
-
+.where-to-buy-item h2{
+    color: #002046;
+    margin-bottom: 0;
+}
 .where-to-buy-item a{
     display: inline-flex;
     align-items: center;
@@ -54,4 +57,34 @@
     font-size: 20px;
     line-height: 120%;
     color: #8996A4 !important;
+}
+
+
+@media (max-width: 767px){
+    .where-to-buy-items{
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+}
+
+@media (max-width: 576px){
+    .where-to-buy{
+        padding: 20px 0 40px;
+    }
+    .where-to-buy-item{
+        padding: 20px;
+        min-height: 200px;
+        gap: 72px;
+    }
+    .where-to-buy-item a{
+        font-size: 14px;
+    }
+    .where-to-buy-item a span{
+        padding-bottom: 0px;
+    }
+    .where-to-buy-item a svg{
+        width: 20px;
+        height: 20px;
+    }
 }

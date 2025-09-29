@@ -146,6 +146,7 @@
 }
 .categories-groups-list li{
     font-size: 24px;
+    line-height: 140%;
     padding: 16px 40px;
     background: #EFF6FF;
     border-radius: 12px;
@@ -227,6 +228,9 @@
         padding: 16px 25px;
         font-size: 16px;
         border-radius: 8px;
+    }
+    .categories-page{
+        padding: 20px 0;
     }
 }
 

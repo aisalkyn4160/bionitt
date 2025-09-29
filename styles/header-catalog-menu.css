@@ -20,10 +20,10 @@
     transition: all 0.3s ease-in-out;
 }
 .header-catalog-burger span:first-child{
-	top: 22px;
+	top: 23px;
 }
 .header-catalog-burger span:last-child{
-	bottom: 22px;
+	bottom: 24px;
 }
 .header-catalog-burger.active span:first-child{
 	transform: translateX(-50%)  rotate(45deg);

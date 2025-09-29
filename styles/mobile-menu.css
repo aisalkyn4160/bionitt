@@ -14,7 +14,7 @@
         background: #fff;
         padding: 20px;
         overflow-y: auto;
-        overflow-x: hidden;
+    
         /* opacity: 0; */
         pointer-events: none;
         transition: all 0.3s ease-in-out;
