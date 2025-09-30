@@ -50,12 +50,16 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    transition: all 0.3s ease;
 }
 .news-link span{
     font-size: 20px;
     font-weight: 500;
     line-height: 120%;
     border-bottom: 1px solid #8996A4;
+}
+.news-link:hover{
+    opacity: 0.5;
 }
 
 .news-list-item:first-child .news-list-item-img{

@@ -37,19 +37,21 @@
     font-weight: 500;
     transition: all .3s ease;
 }
-
-.where-to-buy-item a span{
+.where-to-buy-item:hover a{
+    opacity: .5;
+}
+/* .where-to-buy-item a span{
     border-bottom: 1px solid #8996A4;
     padding-bottom: 4px;
      transition: all .3s ease;
 }
 .where-to-buy-item a:hover span{
-    color: #005DC5;
-    border-color: #005DC5;
+    color: #8996A4;
+    border-color: #8996A4;
 }
 .where-to-buy-item a:hover svg path{
-    stroke: #005DC5;
-}
+    stroke: #8996A4;
+} */
 
 .back-link{
     display: flex;
