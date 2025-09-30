@@ -69,10 +69,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    transition: all .3s ease;
-}
-.contacts-card:hover{
-    background: linear-gradient(195.35deg, #DBF3FC 15.83%, rgba(171, 231, 255, 0.992157) 74.41%, #82DCFF 89.23%);
+    transition: background-position  .3s ease;
 }
 .contacts-card::after{
     content: '';

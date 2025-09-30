@@ -12,15 +12,18 @@
     border-radius: 20px;
     overflow: hidden;
     background: #EFF6FF;
+    background: linear-gradient(195.35deg,#EFF6FF 10%, #DBF3FC 15.83%, rgba(171, 231, 255, 0.992157) 74.41%, #82DCFF 89.23%);
+    background-size: 100% 300%;
+    background-position: 0% 0%;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 76px;
-    transition: all .3s ease;
+    transition: background-position  .3s ease;
 }
 .where-to-buy-item:hover{
-    background: linear-gradient(195.35deg, #DBF3FC 15.83%, rgba(171, 231, 255, 0.992157) 74.41%, #82DCFF 89.23%);
+    background-position: 0% 90%;
 }
 .where-to-buy-item h2{
     color: #002046;
