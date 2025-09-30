@@ -20,7 +20,7 @@
     transition: all 0.3s ease-in-out;
 }
 .header-catalog-burger span:first-child{
-	top: 23px;
+	top: 24px;
 }
 .header-catalog-burger span:last-child{
 	bottom: 24px;
@@ -34,16 +34,30 @@
     bottom: 30px;
 }
 .header-catalog-dropdown{
-    position: absolute;
+    position: fixed;
     padding: 60px 0;
     background: #fff;
     top: 125px;
     width: 100vw;
+    height: calc(100vh - 125px);
     right: -150%;
     z-index: 10;
     transition: right 0.3s ease-in-out;
     box-shadow: -4px 4px 12px 0px #00204633;
+    overflow: auto;
 }
+.header-catalog-dropdown::-webkit-scrollbar {
+        width: 5px; 
+      }
+
+.header-catalog-dropdown::-webkit-scrollbar-track {
+        background: #E1E1E5; 
+      }
+
+.header-catalog-dropdown::-webkit-scrollbar-thumb {
+        background-color: #8A8A8A; 
+
+      }
 .header-catalog-dropdown.show{
     right: 0;
 }

@@ -4,7 +4,7 @@
 @media (max-width: 1130px) {
     .mobile-menu{
         display: block;
-        position: absolute;
+        position: fixed;
         width: 100%;
         max-width: 500px;
         height: 100vh;
@@ -14,13 +14,11 @@
         background: #fff;
         padding: 20px;
         overflow-y: auto;
-    
-        /* opacity: 0; */
+        overflow-x: hidden;
         pointer-events: none;
         transition: all 0.3s ease-in-out;
     }
     .mobile-menu.active{
-        /* opacity: 1; */
         pointer-events: all;
         right: 0;
     }

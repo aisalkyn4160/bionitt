@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   headerCatalogBurger.addEventListener('click', () => {
     headerCatalogBurger.classList.toggle('active');
     headerCatalogDropdown.classList.toggle('show');
+    document.body.classList.toggle('no-scroll');
 
   });
 })

@@ -17,7 +17,7 @@
                         <img src="./assets/icons/logo.svg" alt="logo">
                     </a>
                     <div class="header-search">
-                        <form action="">
+                        <form action="" class="header-search-form">
                             <input type="text" placeholder="Поиск">
                             <button>
                                 <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,6 +25,14 @@
                                 </svg>
                             </button>
                         </form>
+                        <div class="mobile-search-btn">
+                            <svg class="mobile-search-open" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.35254 0.529297C11.1209 0.529297 14.1756 3.5842 14.1758 7.35254C14.1758 8.87604 13.6759 10.2824 12.832 11.418L19.1777 17.7627C19.5682 18.1532 19.5682 18.7872 19.1777 19.1777C18.7872 19.5682 18.1532 19.5682 17.7627 19.1777L11.418 12.832C10.2824 13.6759 8.87604 14.1758 7.35254 14.1758C3.5842 14.1756 0.529297 11.1209 0.529297 7.35254C0.529472 3.5843 3.5843 0.529472 7.35254 0.529297ZM7.35254 2.5293C4.68887 2.52947 2.52947 4.68887 2.5293 7.35254C2.5293 10.0164 4.68877 12.1756 7.35254 12.1758C10.0165 12.1758 12.1758 10.0165 12.1758 7.35254C12.1756 4.68877 10.0164 2.5293 7.35254 2.5293Z" fill="white"/>
+                            </svg>
+                            <svg class="mobile-search-close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L20 20M20 4L4 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
                     </div>
                     <div class="header-contacts">
                         <a href="tel:+73432878585" class="phone">
@@ -76,7 +84,7 @@
                     <nav class="header-nav">
                         <ul class="header-menu">
                             <li><a href="/about.html">О компании</a></li>
-                            <li><a href="/products.html">Продукция</a></li>
+                            <li><a href="/categories.html">Продукция</a></li>
                             <li><a href="/vacancy.html">Вакансии</a></li>
                             <li><a href="/news.html">Новости</a></li>
                             <li><a href="/articles.html">Статьи</a></li>
@@ -92,7 +100,7 @@
                                 <div class="header-catalog-categories">
                                     <h3>Подобрать препарат по виду животного</h3>
                                     <div class="categories-list">
-                                        <a href="#" class="categories-item">
+                                        <a href="pet-catalog.html" class="categories-item">
                                             <div class="categories-item-content">
                                                 <div class="categories-item-link">
                                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -247,19 +255,19 @@
                                 <div class="header-catalog-menu">
                                     <h3>Подобрать препарат по фармацевтической группе</h3>
                                     <ul class="catalog-menu-list">
-                                        <li><a href="/products.html">Антибактериальные препараты</a></li>
-                                        <li><a href="/products.html">Вакцины против болезней кроликов</a></li>
-                                        <li><a href="/products.html">Вакцины против болезней птиц</a></li>
-                                        <li><a href="/products.html">Гинекологические препараты</a></li>
-                                        <li><a href="/products.html">Гормональные препараты</a></li>
-                                        <li><a href="/products.html">Дезинфицирующие препараты</a></li>
-                                        <li><a href="/products.html">Мази для животных</a></li>
-                                        <li><a href="/products.html">Общеукрепляющие и тонизирующие препараты</a></li>
-                                        <li><a href="/products.html">Противопаразитные препараты</a></li>
-                                        <li><a href="/products.html">Противомаститные препараты</a></li>
-                                        <li><a href="/products.html">Растворы</a></li>
-                                        <li><a href="/products.html">Средства для доения</a></li>
-                                        <li><a href="/products.html">Сыворотки</a></li>
+                                        <li><a href="catalog.html">Антибактериальные препараты</a></li>
+                                        <li><a href="#">Вакцины против болезней кроликов</a></li>
+                                        <li><a href="#">Вакцины против болезней птиц</a></li>
+                                        <li><a href="#">Гинекологические препараты</a></li>
+                                        <li><a href="#">Гормональные препараты</a></li>
+                                        <li><a href="#">Дезинфицирующие препараты</a></li>
+                                        <li><a href="#">Мази для животных</a></li>
+                                        <li><a href="#">Общеукрепляющие и тонизирующие препараты</a></li>
+                                        <li><a href="#">Противопаразитные препараты</a></li>
+                                        <li><a href="#">Противомаститные препараты</a></li>
+                                        <li><a href="#">Растворы</a></li>
+                                        <li><a href="#">Средства для доения</a></li>
+                                        <li><a href="#">Сыворотки</a></li>
                                     </ul>
                                 </div>
                                 <nav class="header-catalog-nav">
@@ -345,9 +353,9 @@
                         Назад
                     </span>
                     <div class="mobile-calalog-categories-title">Подобрать препарат по виду животного</div>
-                    <a href="catalog.html" class="mobile-calalog-link">Перейти в каталог</a>
+                    <a href="categories.html" class="mobile-calalog-link">Перейти в каталог</a>
                     <div class="categories-list">
-                                        <a href="#" class="categories-item">
+                                        <a href="pet-catalog.html" class="categories-item">
                                             <div class="categories-item-content">
                                                 <div class="categories-item-link">
                                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -507,21 +515,21 @@
                         Назад
                     </span>
                     <div class="mobile-calalog-categories-title">Подобрать препарат по виду животного</div>
-                    <a href="catalog.html" class="mobile-calalog-link">Перейти в каталог</a>
+                    <a href="categories.html" class="mobile-calalog-link">Перейти в каталог</a>
                     <ul class="catalog-menu-list">
-                        <li><a href="/products.html">Антибактериальные препараты</a></li>
-                        <li><a href="/products.html">Вакцины против болезней кроликов</a></li>
-                        <li><a href="/products.html">Вакцины против болезней птиц</a></li>
-                        <li><a href="/products.html">Гинекологические препараты</a></li>
-                        <li><a href="/products.html">Гормональные препараты</a></li>
-                        <li><a href="/products.html">Дезинфицирующие препараты</a></li>
-                        <li><a href="/products.html">Мази для животных</a></li>
-                        <li><a href="/products.html">Общеукрепляющие и тонизирующие препараты</a></li>
-                        <li><a href="/products.html">Противопаразитные препараты</a></li>
-                        <li><a href="/products.html">Противомаститные препараты</a></li>
-                        <li><a href="/products.html">Растворы</a></li>
-                        <li><a href="/products.html">Средства для доения</a></li>
-                        <li><a href="/products.html">Сыворотки</a></li>
+                        <li><a href="catalog.html">Антибактериальные препараты</a></li>
+                        <li><a href="#">Вакцины против болезней кроликов</a></li>
+                        <li><a href="#">Вакцины против болезней птиц</a></li>
+                        <li><a href="#">Гинекологические препараты</a></li>
+                        <li><a href="#">Гормональные препараты</a></li>
+                        <li><a href="#">Дезинфицирующие препараты</a></li>
+                        <li><a href="#">Мази для животных</a></li>
+                        <li><a href="#">Общеукрепляющие и тонизирующие препараты</a></li>
+                        <li><a href="#">Противопаразитные препараты</a></li>
+                        <li><a href="#">Противомаститные препараты</a></li>
+                        <li><a href="#">Растворы</a></li>
+                        <li><a href="#">Средства для доения</a></li>
+                        <li><a href="#">Сыворотки</a></li>
                     </ul>
 
                 </div>
