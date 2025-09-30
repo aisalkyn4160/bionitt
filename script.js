@@ -45,6 +45,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    const mobSearchBtn = document.querySelector('.mobile-search-btn');
+    const headerSearchForm = document.querySelector('.header-search-form');
+    const headerTop = document.querySelector('.header-top');
+
+  mobSearchBtn.addEventListener('click', () => {
+    mobSearchBtn.classList.toggle('active');
+    headerSearchForm.classList.toggle('active');
+    headerTop.classList.toggle('active');
+  });
+})
+
+document.addEventListener('DOMContentLoaded', () => {
 
     const swiper = new Swiper('.banner-swiper', {
         slidesPerView: 1,
