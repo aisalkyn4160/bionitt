@@ -86,7 +86,7 @@ body{
 	display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 100vw; /* убрать calc */
+    width: 100%; /* убрать calc */
     overflow-x: hidden;
 }
 
@@ -167,6 +167,7 @@ p{
 	display: flex;
 	justify-content: center;	
 	align-items: center;
+	gap: 4px;
 	width: max-content;
 	white-space: nowrap;
 	padding: 16px 40px;
@@ -267,7 +268,8 @@ p{
 #toTop:hover{
 	background-color: #005DC5;
 }
-.phone{
+.phone,
+.mail{
 	white-space: nowrap;
 }
 .breadcrumbs{
@@ -328,6 +330,9 @@ p{
 		width: 10px;
 		height: 10px;
 		margin: 0 4px !important;
+	}
+	h1{
+		font-size: 32px;
 	}
 	h4{
 		font-size: 14px;

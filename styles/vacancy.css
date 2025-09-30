@@ -38,8 +38,12 @@
     background: #EFF6FF;
     padding: 40px;
 }
+.vacancy-acc-item:last-child{
+    margin-bottom: 0;
+}
 .vacancy-acc-ttl{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     gap: 20px;
     cursor: pointer;
@@ -49,6 +53,7 @@
     color: #002046;
 }
 .vacancy-acc-ttl span{
+    flex-shrink: 0;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -101,4 +106,69 @@
     height: 5px;
     border-radius: 50%;
     background: #8996A4;
+}
+
+@media (max-width: 767px){
+    .vacancy-banner-content{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .vacancy-info-item p{
+        font-size: 16px;
+    }
+    .vacancy-info-item ul li{
+        font-size: 16px;
+    }
+    .vacancy-info-item ul li::before{
+        width: 4px;
+        height: 4px;
+        top: 8px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .vacancy-banner{
+        margin-top: 32px;
+        margin-bottom: 40px;
+    }
+    .vacancy-banner-img{
+        margin-bottom: 32px;
+    }
+    .vacancy-banner-img img{
+        object-position: 30%;
+    }
+    .vacancy-list{
+        padding: 40px 0 80px;
+    }
+    .vacancy-list-ttl{
+        margin-bottom: 32px;
+    }
+    .vacancy-acc-item{
+        padding: 20px;
+        margin-bottom: 16px;
+    }
+    .vacancy-acc-ttl{
+        font-size: 20px;
+    }
+    .vacancy-acc-ttl span{
+        width: 36px;
+        height: 36px;
+    }
+    .vacancy-acc-ttl span svg{
+        width: 15px;
+        height: 15px;
+    }
+    .vacancy-acc-content{
+        padding-top: 32px;
+    }
+    .vacancy-info-item{
+        padding: 16px 0;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .vacancy-info-item h4{
+        font-size: 16px;
+    }
 }

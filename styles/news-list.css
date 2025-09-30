@@ -1,9 +1,12 @@
+.news-page{
+    padding-bottom: 60px;
+}
 .news-cart{
     padding-bottom: 60px;
 }
 .news-list-item{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 491px;
     padding: 24px 0;
     border-bottom: 1px solid #8996A4;
     gap: 24px;
@@ -39,6 +42,9 @@
 .news-list-item h3{
     margin-bottom: 20px;
 }
+.news-text{
+    margin-bottom: 24px;
+}
 .news-link{
     margin-top: auto;
     display: flex;
@@ -63,6 +69,10 @@
    
 }
 
+
+.news-cart .news-date{
+    
+}
 .news-cart-main-img{
     width: 100%;
     height: 520px;
@@ -113,13 +123,14 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 120%;
-    color: #E10010;
+    color: #E10010 !important;
     border-radius: 100px;
+    white-space: nowrap;
     transition: all 0.3s ease;
 }
 .news-cart-btns a:hover{
     background: #E10010;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 .news-cart-btns a:hover svg path{
     fill: #ffffff;
@@ -127,7 +138,101 @@
 .news-cart-btns a.active{
     background: #E10010;
     color: #ffffff;
+    
 }
 .news-cart-btns a.active svg path{
     fill: #ffffff;
+}
+
+
+@media (max-width: 995px) {
+    .news-list-item{
+        grid-template-columns: 1fr;
+    }
+    .news-list-item:first-child .news-list-item-content{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .news-list-item:first-child .news-list-item-content{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .news-list-item .news-list-item-content{
+        grid-row: 2/3;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .news-list-item{
+        gap: 20px;
+        padding: 20px 0 32px;
+    }
+    .news-list-item:first-child .news-list-item-img{
+        height: 360px;
+    }
+    .news-list-item-img{
+        border-radius: 12px;
+    }
+    .news-list-item .news-item-top{
+        margin-bottom: 12px;
+    }
+    .news-list-item h3{
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    .news-list-item p{
+        font-size: 14px;
+    }
+
+    .news-link span{
+        font-size: 14px;
+    }
+    .news-link svg{
+        width: 20px;
+    }
+    .news-list-item-img{
+        height: 260px;
+    }
+    .pagination{
+        margin-top: 0;
+    }
+
+
+    .news-cart h2{
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+    .news-cart-main-img{
+        margin: 32px 0;
+        border-radius: 12px;
+        height: 400px;
+    }
+    .news-cart-text{
+        margin-bottom: 32px;
+    }
+    .news-cart-text p{
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .news-cart-bottom-imgs{
+        gap: 12px;
+    }
+    .news-cart-bottom-imgs img{
+        border-radius: 12px;
+    }
+    .news-cart-btns{
+        gap: 12px;
+        margin-top: 32px;
+    }
+    .news-cart-btns a{
+        padding: 12px 27px;
+        font-size: 14px;
+        gap: 8px;
+    }
+    .news-cart-btns a svg{
+       width: 6px;
+       height: 11px;
+       margin-bottom: 3px;
+    }
 }

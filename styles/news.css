@@ -85,9 +85,16 @@
     font-size: 20px;
     color: #8A8A8A;
     padding: 8px 12px;
-    background: #FFFFFF;
     border-radius: 12px;
     width: max-content;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background: #EFF6FF;
+    line-height: normal;
+}
+.news-item .news-date{
+    background: #FFFFFF;
 }
 .news-type{
     font-size: 20px;
@@ -96,6 +103,14 @@
     padding: 8px 12px;
     border-radius: 12px;
     width: max-content;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    line-height: normal;
+}
+.article-type{
+    background: #FFADB3;
+    color: #E10010;
 }
 .news-item h4{
     color: #002046;
@@ -158,10 +173,12 @@
     .news-date{
         font-size: 12px;
         border-radius: 4px;
+        height: 30px;
     }
     .news-type{
         font-size: 12px;
         border-radius: 4px;
+        height: 30px;
     }
 
     .news-item{

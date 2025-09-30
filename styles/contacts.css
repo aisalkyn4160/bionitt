@@ -1,8 +1,9 @@
 .contacts{
-    padding: 60px 0;
+    margin: 60px 0;
 }
 .contacts h4{
     color: #8996A4;
+    white-space: nowrap;
 }
 .contacts-content{
     display: flex;
@@ -16,12 +17,16 @@
     min-height: 194px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
 }
 .contacts-mails{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 24px;
+}
+.contacts-mails div{
+    width: calc(50% - 12px);
+    min-width: max-content;
 }
 .contacts-mails a{
     font-size: 32px;
@@ -32,6 +37,7 @@
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
     color: #313131;
+    
 }
 .contacts-content .socials-list a:not(.dzen){
     background-color: #EFF6FF;
@@ -39,6 +45,9 @@
 
 .contacts-content-right{
     max-width: 491px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .contacts-address h3 span{
     display: block;
@@ -60,6 +69,10 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    transition: all .3s ease;
+}
+.contacts-card:hover{
+    background: linear-gradient(195.35deg, #DBF3FC 15.83%, rgba(171, 231, 255, 0.992157) 74.41%, #82DCFF 89.23%);
 }
 .contacts-card::after{
     content: '';
@@ -74,12 +87,15 @@
 }
 .contacts-card-contacts{
     display: flex;
+    flex-wrap: wrap;
     gap: 60px;
     position: relative;
     z-index: 1;
 }
 .contacts-card h3{
     color: #002046;
+    position: relative;
+    z-index: 1;
 }
 .contacts-card .phone,
 .contacts-card .mail{
@@ -95,7 +111,7 @@
 .contatcs-info{
     padding: 60px 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 24px;
 }
 .contacts-requisites{
@@ -103,6 +119,9 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 60px;
+}
+.contacts-requisites h2{
+    margin-bottom: 0;
 }
 
 .contacts-requisites p{
@@ -127,4 +146,112 @@
     font-size: 20px;
     margin-top: 20px;
     margin-left: 80px;
+}
+
+@media (max-width: 995px) {
+    .contacts h4{
+        font-size: 14px;
+    }
+    .contacts-mails a{
+        font-size: 20px;
+    }
+    .contacts-address h3{
+        font-size: 20px;
+    }
+    .contacts-content-left .socials-list{
+        font-size: 12px;
+    }
+    .contacts-card .phone, .contacts-card .mail{
+        font-size: 16px;
+    }
+    .contacts-card h3{
+        font-size: 20px;
+    }
+    .contacts-card-contacts a svg{
+        width: 15px;
+        height: 16px;
+    }
+    .contacts-requisites p{
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .contacts-requisites .btn{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts-content{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .contacts-content-left{
+        width: 100%;
+        min-height: auto;
+    }
+    .contacts-content-right{
+        width: 100%;
+    }
+    .contacts-cards{
+        grid-template-columns: 1fr;
+    }
+    .contacts-requisites{
+        gap: 40px;
+    }
+    .contacts-requisites p{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .contacts-card{
+        min-height: 170px;
+    }
+    .contatcs-info{
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    #map{
+        height: 400px;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contacts{
+        margin: 32px 0;
+    }
+    .contacts-content{
+        margin-bottom: 32px;
+    }
+    .contacts-cards{
+        margin-bottom: 40px;
+    }
+     .contacts-card{
+        border-radius: 12px;
+        padding: 20px;
+    }
+    .contacts-card-contacts{
+        gap: 12px;
+    }
+    .contacts-card .phone, .contacts-card .mail {   
+        letter-spacing: -1px;
+    }
+    .contacts-card::after{
+        width: 200px;
+        height: 200px;
+        top: 0;
+        right: -80px;
+    }
+    .contatcs-info{
+        padding-top: 40px;
+    }
+    .contacts-requisites{
+        gap: 32px;
+    }
+    .contacts-requisites .btn svg{
+        width: 20px;
+        height: 20px;
+    }
+    .contatcs-info{
+        margin-bottom: 30px;
+    }
 }
