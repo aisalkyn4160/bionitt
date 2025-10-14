@@ -1,6 +1,9 @@
 .categories{
     padding: 60px 0;
 }
+.categories-page{
+    padding-top: 8px;
+}
 .categories-heading{
     display: grid;
     grid-template-columns: 1fr 1fr;

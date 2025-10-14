@@ -79,42 +79,73 @@
 }
 
 
-.products-categories{
+.products-categories {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     margin: 20px 0;
 }
-.products-categories h2{
-    max-width: 877px;
-}
-.products-categories li{
+
+.category-item {
+    position: relative;
     font-size: 16px;
-    padding: 16px 28px;
-    background: #EFF6FF;
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.products-categories li.all-products{
-    background: linear-gradient(195.35deg, #DBF3FC 15.83%, rgba(171, 231, 255, 0.992157) 74.41%, #82DCFF 89.23%);
-    color: #027EB1;
+
+.category-item input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
-.products-categories li.active{
-    background: #005DC5;
-    color: #FFF;
-}
-.products-categories li.active a{
+
+.category-item label {
+    display: block;
+    padding: 16px 28px;
+    background: #EFF6FF;
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 12px;
 }
-.products-categories li.active a:after{
+
+/* Стиль для выбранных чекбоксов */
+.category-item input[type="checkbox"]:checked + label {
+    background: #005DC5;
+    color: #FFF;
+   
+
+    
+}
+
+.category-item input[type="checkbox"]:checked + label::after {
     content: '';
     display: inline-block;
     width: 20px;
     height: 20px;
     background: no-repeat center url(../assets/icons/cross.svg);
+}
+
+.category-item.all-products {
+    background: linear-gradient(195.35deg, #DBF3FC 15.83%, rgba(171, 231, 255, 0.992157) 74.41%, #82DCFF 89.23%);
+    color: #027EB1;
+}
+
+/* Стили для hover эффектов */
+.category-item:not(:has(input:checked)):hover {
+    background: #dbeafe;
+}
+
+.category-item:has(input:checked):hover {
+    background: #004ba8;
+}
+
+.category-item.all-products:hover {
+    background: linear-gradient(195.35deg, #c9e8f9 15.83%, rgba(156, 218, 240, 0.992157) 74.41%, #6fd4ff 89.23%);
 }
 @media (max-width: 1195px){
     .products-list{
@@ -137,11 +168,11 @@
     .products-categories{
         gap: 8px;
     }
-    .products-categories li{
+    .category-item label {
         padding: 10px 12px;
         font-size: 12px;
     }
-    .products-categories li.active a:after{
+  .category-item input[type="checkbox"]:checked + label::after{
         width: 12px;
         height: 12px;
     }

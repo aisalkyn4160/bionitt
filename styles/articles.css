@@ -70,6 +70,7 @@
 .articles-list-item:first-child p{
     display: block;
     display: -webkit-box;
+    line-clamp: 4;
     -webkit-line-clamp: 4; 
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -96,6 +97,7 @@
 
 .article-bottom-imgs{
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     margin-bottom: 40px;
 }
@@ -161,6 +163,7 @@
     }
     .articles-list-item:first-child p{
         font-size: 14px;
+        line-clamp: 7;
          -webkit-line-clamp: 7; 
     }
     .articles .news-list-item:first-child .news-list-item-img{

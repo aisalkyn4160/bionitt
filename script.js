@@ -215,11 +215,14 @@ document.addEventListener('DOMContentLoaded', () => {
 $(function () {
     $('.news-tab:first-child').addClass('active')
     $('.news-items:first-child').addClass('active')
+    $('.news-tab-all:first-child').addClass('active')
     $('.news-tab').click(function () {
         $('.news-tab').removeClass('active');
         $('.news-items').removeClass('active');
+        $('.news-tab-all').removeClass('active');
         $(this).addClass('active');
         $(`.news-items[data-tab="${this.dataset.tab}"]`).addClass('active');
+        $(`.news-tab-all[data-tab="${this.dataset.tab}"]`).addClass('active');
     });
 })
 
@@ -307,6 +310,30 @@ document.addEventListener('DOMContentLoaded', () => {
             hidePopup();
         }
     });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const legalChoice = document.getElementById('legalChoice');
+    const individualChoice = document.getElementById('individualChoice');
+    const legalNameField = document.querySelector('.legal-name-field');
+
+
+    function toggleLegalNameField() {
+        if (individualChoice.checked) {
+            legalNameField.style.display = 'none';
+            legalNameField.removeAttribute('required');
+        } else {
+            legalNameField.style.display = 'block';
+            legalNameField.setAttribute('required', 'required');
+        }
+    }
+
+    // Инициализация при загрузке
+    toggleLegalNameField();
+
+    // Обработчики событий для радиокнопок
+    legalChoice.addEventListener('change', toggleLegalNameField);
+    individualChoice.addEventListener('change', toggleLegalNameField);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
