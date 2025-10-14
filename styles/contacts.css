@@ -39,10 +39,12 @@
     color: #313131;
     
 }
-.contacts-content .socials-list a:not(.dzen){
+.contacts-content .socials-list a{
     background-color: #EFF6FF;
 }
-
+.contacts-content .socials-list a:hover{
+    background-color: transparent;
+}
 .contacts-content-right{
     max-width: 491px;
     display: flex;

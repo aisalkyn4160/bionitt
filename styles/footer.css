@@ -91,8 +91,10 @@
   padding: 12px 20px;
   background: #ffffff;
   border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
 }
-.socials-list .dzen{
+.socials-list a:hover{
   background: transparent;
   border: 1px solid #C7D2DE;
 }

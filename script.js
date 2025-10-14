@@ -11,36 +11,39 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 document.addEventListener('DOMContentLoaded', function() {
-  const button = document.getElementById('language-btn');
-  const buttonText = button.querySelector('span');
-  const dropdown = document.getElementById('language-dropdown');
-  const option = document.querySelector('.language-option');
+  const languageSwitchers = document.querySelectorAll('.language-switcher');
+  
+  languageSwitchers.forEach(switcher => {
+    const button = switcher.querySelector('.language-btn');
+    const buttonText = button.querySelector('span');
+    const dropdown = switcher.querySelector('.language-dropdown');
+    const option = switcher.querySelector('.language-option');
 
-  // Показать/скрыть дропдаун при клике на кнопку
-  button.addEventListener('click', function() {
-    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-  });
+    // Показать/скрыть дропдаун при клике на кнопку
+    button.addEventListener('click', function() {
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
 
-  // Обработка выбора языка
-  option.addEventListener('click', function(e) {
-    e.preventDefault();
-    dropdown.style.display = 'none';
-    if (buttonText.textContent === 'RUS') {
-      buttonText.textContent = 'ENG';
-      option.textContent = 'RUS';
-    } else {
-      buttonText.textContent = 'RUS';
-      option.textContent = 'ENG';
-    }
-    
-  });
-
-  // Закрыть дропдаун при клике вне его
-  window.addEventListener('click', function(e) {
-    if (!e.target.matches('#language-button')) {
-      if (dropdown.classList.contains('show')) {
-        dropdown.classList.remove('show');
+    // Обработка выбора языка
+    option.addEventListener('click', function(e) {
+      e.preventDefault();
+      dropdown.style.display = 'none';
+      if (buttonText.textContent === 'RUS') {
+        buttonText.textContent = 'ENG';
+        option.textContent = 'RUS';
+      } else {
+        buttonText.textContent = 'RUS';
+        option.textContent = 'ENG';
       }
+    });
+  });
+
+  // Закрыть дропдауны при клике вне их
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.language-switcher')) {
+      document.querySelectorAll('.language-dropdown').forEach(dropdown => {
+        dropdown.style.display = 'none';
+      });
     }
   });
 });
@@ -349,6 +352,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     closeMenu.addEventListener('click', () => {
+        mobMenu.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+        mobMneuOverlay.classList.remove('active');
+    });
+    mobMneuOverlay.addEventListener('click', () => {
         mobMenu.classList.remove('active');
         document.body.classList.remove('no-scroll');
         mobMneuOverlay.classList.remove('active');
