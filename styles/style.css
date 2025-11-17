@@ -287,7 +287,17 @@ p{
 	border-right: 2px solid #8A8A8A;
 
 }
-
+@media (max-width: 1920px) {
+	.container{
+		max-width: 1254px;
+	}
+	h1{
+		font-size: 60px;
+	}
+	h2{
+		font-size: 48px;
+	}
+}
 @media (max-width: 1195px){
 	h1{
 		font-size: 50px;

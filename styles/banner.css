@@ -61,15 +61,25 @@
     left: -53px;
 }
 
+@media (max-width: 1920px) {
+    .banner{
+        padding: 20px 0;
+    }
+    .banner-content{
+        height: 680px;
+        padding: 60px;
+    }
+ 
+}
 
 @media (max-width: 1650px){
-    .banner  .swiper-btn-next{
+    /* .banner  .swiper-btn-next{
         right: 8px;
     }
 
     .banner  .swiper-btn-prev{
         left: 8px;
-    }
+    } */
     
 }
 

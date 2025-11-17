@@ -87,6 +87,7 @@
 
 .header-catalog-categories .categories-item-content{
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 4px;
     padding: 15px 20px;
@@ -164,7 +165,75 @@
 
 
 
+@media (max-width: 1920px) {
+    .header-catalog-burger{
+		width: 44px;
+		height: 44px;
+	}
+    .header-catalog-burger span:first-child{
+        top: 16px;
+    }
+    .header-catalog-burger span:last-child{
+        bottom: 16px;
+    }
+    .header-catalog-burger.active span:first-child{
+        top: 20px;
+    }
+    .header-catalog-burger.active span:last-child{
+        bottom: 22px;
+    }
 
+    .header-catalog-dropdown{
+        top: 92px;
+        box-shadow: -4px 4px 12px 0px #00204633;
+        padding: 40px 0;
+    }
+    .header-catalog-top{
+        gap: 44px;
+        margin-bottom: 60px;
+    }
+    .header-catalog-top h3{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .header-catalog-categories{
+        max-width: 387px;
+    }
+    .header-catalog-categories .categories-list{
+        gap: 12px;
+    }
+     .header-catalog-categories .categories-item{
+        min-height: unset;
+     }
+    .header-catalog-categories .categories-item-content{
+        padding: 16px 12px;
+        font-size: 14px;
+    }
+    .header-catalog-categories .categories-item-icon{
+        width: 40px;
+        height: 40px;
+    }
+    .header-catalog-categories .categories-item-ellips{
+        width: 95px;
+        height: 95px;
+        right: -42px;
+        bottom: -52px;
+    }
+    .header-catalog-menu ul{
+        font-size: 16px;
+        gap: 12px;
+    }
+    .header-catalog-nav ul{
+        font-size: 24px;
+        gap: 16px;
+    }
+    .header-catalog-contacts-item span{
+        font-size: 16px;
+    }
+    .header-catalog-contacts-item a{
+        font-size: 24px;
+    }
+}
 @media (max-width: 1130px){
 	.header-catalog-burger{
 		display: none;

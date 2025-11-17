@@ -68,7 +68,17 @@
     padding-top: 20px;
     border-top: 1px solid rgba(0, 93, 197, 0.4);
 }
-
+@media (max-width: 1920px) {
+    .advantages-heading{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .advantages-img{
+        display: none;
+    }
+}
 @media (max-width: 1300px){
    .advantages-swiper{
        max-width: 740px;
@@ -91,6 +101,7 @@
     }
 
     .advantages-img{
+        display: block;
         height: 100%;
         width: 100%;
     }

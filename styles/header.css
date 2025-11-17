@@ -13,11 +13,17 @@
 }
 .header-logo{
 	width: 20%;
-	min-width: 176px;
-	max-height: 80px;
+	min-width: 229px;
+	/* max-height: 60px; */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	overflow: hidden;
 }
 .header-logo img{
-	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
 }
 .header-search{
 	width: 621px;
@@ -52,6 +58,7 @@
 .header-search button{
 	width: 33px;
 	height: 32px;
+	flex-shrink: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -121,7 +128,58 @@
 	align-items: center;
 }
 
-
+@media (max-width: 1920px) {
+	.header-logo{
+		max-height: 60px;
+	}
+	.header-top{
+		padding: 16px 0;
+		min-height: 92px;
+	}
+	.header-contacts{
+		font-size: 16px;
+		margin-right: 0;
+	}
+	.header-contacts a svg{
+		width: 16px;
+		height: 16px;
+	}
+	.header-contacts svg path{
+		fill: #C7D2DE;
+		stroke: #C7D2DE;
+	}
+	.header-contacts .mail svg rect{
+		stroke: #C7D2DE;
+		fill: #C7D2DE;
+	}
+	.header-contacts .mail svg path{
+		stroke: #FFF;
+	}
+	.header-social{
+		width: 48px;
+		height: 48px;
+		border-radius: 4px;
+		background: #EFF6FF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 0;
+	}
+	.header-social span{
+		display: none;
+	}
+	.header-social svg path{
+		fill: #005DC5;
+	} 
+	.header-search-form{
+		height: 48px;
+		border-radius: 4px;
+	}
+	.header-search input{
+		border-radius: 2px;
+		padding: 10px 20px;
+	}
+}
 @media (max-width: 1130px){
 	.header{
 		border-bottom: none;

@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 spaceBetween: 16,
             },
             576: {
-                slidesPerView: 3,
+                slidesPerView: 2.5,
             },
         },
 });
@@ -148,8 +148,11 @@ const aboutSwiper2 = new Swiper('.about-details .about-swiper', {
                     slidesPerView: 3.5,
                 },
                 768: {
-                    slidesPerView: 4.5,
+                    slidesPerView: 6,
                 },
+                1920:{
+                     slidesPerView: 4.5,
+                }
             },
     });
 

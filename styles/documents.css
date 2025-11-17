@@ -38,6 +38,11 @@
         display: none;
     }
 
+@media (max-width: 1920px) {
+    .documents-swiper{
+            margin-right: 0;
+    }
+}
 @media (max-width: 576px){
    .documents{
         padding: 30px 0;
