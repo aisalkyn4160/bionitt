@@ -148,6 +148,24 @@
     overflow: hidden;
 }
 
+@media (max-width: 1920px) {
+    .news{
+        padding: 40px 0;
+    }
+    .news-heading{
+        margin-bottom: 40px;
+    }
+    .news-items{
+        gap: 20px;
+    }
+     .news-item{
+        min-height: 227px;
+    }
+    .news-item h4{
+        -webkit-line-clamp: 5;
+    }
+}
+
 @media (max-width: 1195px){
     .news-items{
         grid-template-columns: repeat(2, 1fr);
@@ -160,6 +178,7 @@
     .news-tab h2{
         font-size: 40px;
     }
+   
 }
 
 @media (max-width: 767px){

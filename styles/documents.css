@@ -39,6 +39,12 @@
     }
 
 @media (max-width: 1920px) {
+    .documents{
+        padding-bottom: 40px;
+    }
+    .documents-heading{
+        margin-bottom: 40px;
+    }
     .documents-swiper{
             margin-right: 0;
     }

@@ -230,6 +230,12 @@
     line-height: 140%;
 }
 
+@media (max-width: 1920px) {
+    .feedback{
+        padding: 40px 0 80px;
+    }
+}
+
 @media (max-width: 1195px){
 
    .feedback-container{

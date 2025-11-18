@@ -162,6 +162,12 @@
 }
 
 @media (max-width: 1920px) {
+    .categories{
+        padding: 40px 0 60px;
+    }
+    .categories-heading{
+        margin-bottom: 40px;
+    }
     .categories-heading p{
         font-size: 16px;
     }

@@ -185,19 +185,12 @@ const aboutSwiper2 = new Swiper('.about-details .about-swiper', {
                 },
             },
             576: {
-                slidesPerView: 1.5,
-                spaceBetween: 16,
-                grid: {
-                    rows: 2,
-                    fill: 'row',
-                },
-            },
-            950: {
-                slidesPerView: 2,
-            },
-            1300: {
                 slidesPerView: 3,
+                
             },
+            768: {
+                slidesPerView: 4.5,
+            }
         },  
     });
 
