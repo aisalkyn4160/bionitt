@@ -145,7 +145,7 @@
     margin: 60px 0;
 }
 .categories-groups h2{
-    max-width: 877px;
+    /* max-width: 877px; */
 }
 .categories-groups-list li{
     font-size: 24px;
@@ -162,6 +162,9 @@
 }
 
 @media (max-width: 1920px) {
+     .categories-page{
+        padding: 8px 0 40px !important;
+    }
     .categories{
         padding: 40px 0 60px;
     }
@@ -178,8 +181,33 @@
         justify-content: space-between;
 
     }
- 
-
+    .categories-list{
+        gap: 20px;
+    }
+    .categories-item{
+        min-height: 240px;
+    }
+    .categories-item-ellips{
+        width: 160px;
+        height: 160px;
+        right: -32px;
+        bottom: -60px;
+    }
+    .categories-item-link{
+        border-radius: 8px;
+    }
+    .categories-groups{
+        padding: 40px 0;
+    }
+    .categories-groups-list{
+        margin: 40px 0;
+        gap: 12px;
+    }
+    .categories-groups-list li{
+        font-size: 20px;
+        padding: 16px 40px;
+        line-height: 120%;
+    }
 }
 @media (max-width: 1300px){
     .categories-item-content{

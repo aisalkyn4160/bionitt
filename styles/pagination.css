@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-    margin-top: 40px;
     margin-bottom: 60px;
 }
 .pagination li{
@@ -13,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 8px;
 }
 .pagination li a{
     width: 100%;
@@ -21,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 8px;
     background: #EFF6FF;
     font-weight: 500;
     font-size: 20px;
@@ -49,7 +48,11 @@
     background: transparent;
 }   
 
-
+@media (max-width:1920px) {
+    .pagination{
+        margin-bottom: 40px;
+    }
+}
 @media (max-width: 576px) {
     .pagination{
         margin-top: 32px;

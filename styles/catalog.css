@@ -147,6 +147,22 @@
 .category-item.all-products:hover {
     background: linear-gradient(195.35deg, #c9e8f9 15.83%, rgba(156, 218, 240, 0.992157) 74.41%, #6fd4ff 89.23%);
 }
+
+@media (max-width: 1920px) {
+    .catalog{
+        padding-bottom: 40px;
+    }
+   .products-list{
+        padding: 40px 0 28px;
+        gap: 20px;
+   }
+   .products-item-icons{
+    width: 280px;
+   }
+   .products-item-content h3{
+    font-size: 24px;
+   }
+}
 @media (max-width: 1195px){
     .products-list{
         grid-template-columns: repeat(2, 1fr);

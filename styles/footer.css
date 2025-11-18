@@ -157,6 +157,9 @@
   .footer-middle h3{
     font-size: 20px;
   }
+  .footer-catalog ul{
+    grid-template-columns: repeat(2, 181px);
+  }
   .footer nav ul li{
     font-size: 16px;
     margin-bottom: 16px;

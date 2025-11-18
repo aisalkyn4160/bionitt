@@ -5,6 +5,7 @@
     padding: 40px;
     overflow: hidden;
     margin-bottom: 60px;
+    margin-top: 40px;
     gap: 40px;
 }
 .product-info-content{
@@ -117,12 +118,11 @@
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 60px;
-    gap: 40px;
+    gap: 20px;
 }
 .product-info-bottom-title h2{
     margin-bottom: 0;
     max-width: 342px;
-    font-size: 60px;
 }
 .product-tabs{
     display: flex;
@@ -269,7 +269,63 @@
     height: 100%;
     object-fit: cover;
 }
-
+@media (max-width: 1920px) {
+    .product-info{
+        margin-bottom: 20px;
+    }
+    .product-info-content h1{
+        font-size: 48px;
+    }
+    .product-info-content{
+        width: calc(100% - 484px);
+        gap: 58px;
+    }
+    .product-info-img{
+        width: 484px;
+    }
+    .product-info-groups .products-item-icons{
+        width: 328px;
+    }
+    .product-info-bottom{
+        padding-top: 40px;
+    }
+    .product-tabs{
+        gap: 12px;
+    }
+    .product-tabs__item{
+        letter-spacing: -1px;
+    }
+    .product-info-bottom-title{
+        margin-bottom: 40px;
+    }
+    .product-info-bottom-title h2 {
+        max-width: 385px;
+        padding-right: 100px;
+    }
+    .product-application-img{
+        width: 384px;
+        height: 400px;
+    }
+    .product-application-table-row{
+        margin-bottom: 12px;
+    }
+    .product-application-table-row h3{
+        font-size: 24px;
+    }
+    .product-application-icon{
+        width: 60px;
+        height: 60px;
+    }
+    .product-application-table-text h4{
+        font-size: 20px;
+    }
+    .instruction-acc__title{
+        padding: 20px 0;
+    }
+    .instruction-acc__title h3{
+        font-size: 24px;
+    }
+}
 @media (max-width: 1440px) {
     .product-info-img img{
         display: block;
