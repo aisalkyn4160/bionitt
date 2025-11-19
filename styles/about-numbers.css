@@ -39,7 +39,11 @@
     color: #005DC5;
     font-size: 60px;
 }
-
+@media (max-width: 1920px) {
+    .about-numbers{
+        padding: 40px 0;
+    }
+}
 @media (max-width: 995px) {
     .about-numbers-heading{
         flex-direction: column;

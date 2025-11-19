@@ -146,7 +146,46 @@
     margin-top: 20px;
     margin-left: 80px;
 }
+@media (max-width: 1920px) {
+    .contacts{
+        margin: 40px 0;
+    }
+    .contacts-content-left{
+        width: auto;
+    }
+    .contacts-mails h4{
+        font-size: 20px;
+    }
+    .contacts-mails a{
+        font-size: 24px;
+    }
+    .contacts-content{
+        margin-bottom: 40px;
+    }
+    .contacts-content .socials-list{
+        gap: 8px;
+    }
+    .contacts-content .socials-list a{
+        padding: 9px 20px;
+    }
+    .contacts-content-right{
+        max-width: 387px;
+    }
+    .contacts-address h3{
+        font-size: 24px;
+    }
+    .contacts-cards{
+        margin-bottom: 40px;
+    }
+    .contatcs-info{
+        padding: 40px 0;
 
+    }
+    .contacts-requisites p{
+        font-size: 20px;
+        line-height: 120%;
+    }
+}
 @media (max-width: 995px) {
     .contacts h4{
         font-size: 14px;

@@ -51,6 +51,16 @@
     object-fit: cover;
 }
 
+@media (max-width: 1920px) {
+    .geography{
+        margin-top: 0;
+        padding: 43px 0;
+    }
+    .geography-content{
+        padding-bottom: 158px;
+    }
+}
+
 @media (max-width: 767px) {
     .geography-map{
         width: 522px;
@@ -84,7 +94,7 @@
      }
      .geography-content{
         /* min-height: auto; */
-        padding-bottom: 60px;
+        padding-bottom: 120px;
         padding-right: 40px;
      }
     .geography-map{

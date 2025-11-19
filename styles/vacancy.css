@@ -107,7 +107,48 @@
     border-radius: 50%;
     background: #8996A4;
 }
-
+@media (max-width: 1920px) {
+    .vacancy-banner-img{
+        height: 320px;
+        margin-bottom: 20px;
+    }
+    .vacancy-banner-content{
+        gap: 60px;
+    }
+    .vacancy-banner {
+        margin-bottom: 40px;
+    }
+    .vacancy-list{
+        padding: 40px 0;
+    }
+    .vacancy-list-ttl{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        margin-bottom: 40px;
+    }
+    .vacancy-acc-item{
+        margin-bottom: 16px;
+        padding: 28px;
+    }
+    .vacancy-acc-ttl{
+        font-size: 24px;
+    }
+    .vacancy-acc-ttl span{
+        width: 40px;
+        height: 40px;
+    }
+    .vacancy-acc-content{
+        padding-top: 28px;
+    }
+    .vacancy-info-item{
+        padding: 16px 0;
+    }
+    .vacancy-info-item h4{
+        font-size: 20px;
+    }
+}
 @media (max-width: 767px){
     .vacancy-banner-content{
         grid-template-columns: 1fr;

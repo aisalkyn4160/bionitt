@@ -40,18 +40,6 @@
 .where-to-buy-item:hover a{
     opacity: .5;
 }
-/* .where-to-buy-item a span{
-    border-bottom: 1px solid #8996A4;
-    padding-bottom: 4px;
-     transition: all .3s ease;
-}
-.where-to-buy-item a:hover span{
-    color: #8996A4;
-    border-color: #8996A4;
-}
-.where-to-buy-item a:hover svg path{
-    stroke: #8996A4;
-} */
 
 .back-link{
     display: flex;
@@ -63,7 +51,17 @@
     line-height: 120%;
     color: #8996A4 !important;
 }
-
+@media (max-width: 1920px) {
+    .where-to-buy{
+        padding: 20px 0 40px;
+    }
+    .where-to-buy-items{
+        gap: 20px;
+    }
+    .where-to-buy-item{
+        gap: 92px;
+    }
+}
 
 @media (max-width: 767px){
     .where-to-buy-items{
