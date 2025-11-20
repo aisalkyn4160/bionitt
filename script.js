@@ -150,7 +150,7 @@ const aboutSwiper2 = new Swiper('.about-details .about-swiper', {
                 768: {
                     slidesPerView: 6,
                 },
-                1920:{
+                1921:{
                      slidesPerView: 4.5,
                 }
             },
