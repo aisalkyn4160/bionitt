@@ -186,11 +186,13 @@
     max-width: 382px;
     letter-spacing: -1px;
   }
-  .footer-bottom{
-    padding-left: 40px;
+ 
+}
+@media (max-width: 1500px) {
+   .footer-bottom{
+    padding-left: 112px;
   }
 }
-
 @media (max-width: 1400px){
   .footer nav ul li{
     margin-bottom: 12px;
@@ -258,5 +260,8 @@
    .socials-list a svg{
     width: 16px;
     height: 16px;
+   }
+   .footer-bottom{
+    padding-left: 0;
    }
 }

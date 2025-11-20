@@ -313,6 +313,11 @@ p{
 		height: 48px;
 	}
 }
+@media (max-width: 1500px) {
+	#toTop{
+		left: 16px;
+	}
+}
 @media (max-width: 1195px){
 	h1{
 		font-size: 50px;
