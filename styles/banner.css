@@ -2,20 +2,6 @@
     padding: 40px 0;
     position: relative;
 }
-/* .banner-element-top{
-    display: none;
-    position: absolute;
-    top: -37px;
-    left: 0px;
-    z-index: -1;
-}
-.banner-element-bottom{
-    display: none;
-    position: absolute;
-    bottom: -450px;
-    right: 0px;
-    z-index: -1;
-} */
 .banner-container{
     position: relative;
 }
@@ -74,14 +60,14 @@
  
 }
 
-@media (max-width: 1650px){
-    /* .banner  .swiper-btn-next{
+@media (max-width: 1375px){
+    .banner  .swiper-btn-next{
         right: 8px;
     }
 
     .banner  .swiper-btn-prev{
         left: 8px;
-    } */
+    }
     
 }
 
