@@ -167,7 +167,8 @@
         border-radius: 20px;
         overflow: hidden;
         padding: 40px;
-        background:  no-repeat 0/100% 100% url(../assets/imgs/about-link.png);
+        background-color: #FFF;
+        /* background:  no-repeat 0/100% 100% url(../assets/imgs/about-link.png); */
         display: flex;
         flex-direction: column;
         justify-content: flex-end;

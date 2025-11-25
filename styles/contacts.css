@@ -73,7 +73,7 @@
     position: relative;
     transition: background-position  .3s ease;
 }
-.contacts-card::after{
+/* .contacts-card::after{
     content: '';
     position: absolute;
     width: 276px;
@@ -81,9 +81,8 @@
     top: -30px;
     right: -48px;
     background:no-repeat center/contain url(../assets/imgs//element.png);
-    /* z-index: -1; */
     pointer-events: none;
-}
+} */
 .contacts-card-contacts{
     display: flex;
     flex-wrap: wrap;

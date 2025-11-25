@@ -2,18 +2,20 @@
     padding: 40px 0;
     position: relative;
 }
-.banner-element-top{
+/* .banner-element-top{
+    display: none;
     position: absolute;
     top: -37px;
     left: 0px;
     z-index: -1;
 }
 .banner-element-bottom{
+    display: none;
     position: absolute;
     bottom: -450px;
     right: 0px;
     z-index: -1;
-}
+} */
 .banner-container{
     position: relative;
 }

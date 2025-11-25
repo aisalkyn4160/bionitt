@@ -70,16 +70,16 @@
     z-index: 1;
 }
 
-.product-info-img-bg{
+/* .product-info-img-bg{
     position: absolute;
     right: -60px;
     bottom: -269px;
     width: 760px;
     aspect-ratio: 1/1;
     background: no-repeat center/cover url(../assets/imgs/element.png);
-}
+} */
 
-.product-info-img-ellipse,
+/* .product-info-img-ellipse,
 .product-info-img-ellipse2,
 .product-info-img-ellipse3{
     width: 52px;
@@ -107,7 +107,7 @@
     left: 0px;
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.4) 0%, rgba(171, 231, 255, 0.8) 95.67%);
 
-}
+} */
 
 
 .product-info-bottom{
