@@ -19,9 +19,6 @@
     background: #FFFFFF;
     border-radius: 28px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
 }
 .about-item-1{
     grid-row: 1/4;
